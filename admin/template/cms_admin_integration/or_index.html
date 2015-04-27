@@ -1,0 +1,130 @@
+<table width="733" style="border:none;" >
+<tr valign="top">
+{check_admin}
+	<td style="width:36%;">
+	{general_info}
+	<hr style="width:95%;" />
+	<div id="openrealty_links">
+<fieldset><legend title="Open Realty UK">Open <span class="realty">Realty</span> UK</legend>
+<ul>
+<li><a href="http://www.open-realty.co.uk/">Open Realty UK</a></li>
+<li><a href="http://www.open-realty.co.uk/templates/">Commercial Templates</a></li>
+<li><a href="http://www.open-realty.co.uk/addons/">Commercial Addons</a></li>
+<li><a href="http://www.open-realty.co.uk/design/">Design Service</a></li>
+
+<!-- <li class="upgrade_false">-</li> -->
+</ul>
+</fieldset></div>
+	<hr style="width:95%;" />
+	{openrealty_links}
+	</td>
+	<td style="width:64%; text-align:center;"><table width="375" style="border:none;">
+{/check_admin}
+{!check_admin}
+	<td style="width:100%; text-align:center;"><table width="375" style="border:none;">
+{/!check_admin}
+<!-- Row1 -->
+<tr>
+<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=user_manager&amp;edit={user_id}"><img class="admin_index_icon" src="{baseurl}/admin/images/no_lang/edit_my_account.jpg" alt=""/><br />{lang_admin_edit_my_account}</a></div></td>
+<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=add_listing_property_class"><img src="{baseurl}/admin/images/no_lang/add_listing.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_add_listing}</a></div></td>
+<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=edit_my_listings"><img src="{baseurl}/admin/images/no_lang/edit_my_listings.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_edit_my_listings}</a></div></td>
+<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+</tr>
+<!-- Row2 -->
+<!-- 
+<tr>
+<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{url_view_favorites}"><img src="{baseurl}/admin/images/no_lang/favorites.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_favorites}</a></div></td>
+<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{url_view_saved_searches}"><img src="{baseurl}/admin/images/no_lang/savedsearch.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_saved_search}</a></div></td>
+<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+</tr>
+-->
+<!-- Row3 -->
+<tr>
+{check_edit_all_listings}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=edit_listings"><img src="{baseurl}/admin/images/no_lang/edit_all_listings.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_edit_all_listings}</a></div></td>
+{/check_edit_all_listings}
+{!check_edit_all_listings}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+{/!check_edit_all_listings}
+
+{check_edit_all_users}
+	<td style="width:17%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=user_manager"><img src="{baseurl}/admin/images/no_lang/user_manager.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_user_manager}</a></div></td>
+{/check_edit_all_users}
+{!check_edit_all_users}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+{/!check_edit_all_users}
+<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+</tr>
+<!-- Row4 -->
+	<tr>
+{check_edit_agent_template}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=edit_user_template&amp;type=agent"><img src="{baseurl}/admin/images/no_lang/edit_agent_template.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_edit_agent_template}</a></div></td>
+{/check_edit_agent_template}
+{check_edit_member_template}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=edit_user_template&amp;type=member"><img src="{baseurl}/admin/images/no_lang/edit_member_template.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_edit_member_template}</a></div></td>
+{/check_edit_member_template}
+{check_edit_listing_template}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=edit_listing_template"><img src="{baseurl}/admin/images/no_lang/edit_listing_template.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_edit_listing_template}</a></div></td>
+{/check_edit_listing_template}
+{!check_edit_agent_template}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+{/!check_edit_agent_template}
+{!check_edit_member_template}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+{/!check_edit_member_template}
+{!check_edit_listing_template}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+{/!check_edit_listing_template}
+{check_edit_listing_classes}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=show_property_classes"><img src="{baseurl}/admin/images/no_lang/pclasses.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_property_classes}</a></div></td>
+{/check_edit_listing_classes}
+{!check_edit_listing_classes}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+{/!check_edit_listing_classes}
+</tr>
+<!-- Row5 -->
+	<tr>
+{check_access_blog_manager}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=edit_blog"><img src="{baseurl}/admin/images/no_lang/edit_blog.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_blog_manager}</a></div></td>
+{/check_access_blog_manager}
+{!check_access_blog_manager}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+{/!check_access_blog_manager}
+{check_edit_pages}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=edit_page"><img class="admin_index_icon" src="{baseurl}/admin/images/no_lang/page_editor.jpg" alt=""/><br />{lang_admin_page_editor_caption}</a></div></td>
+{/check_edit_pages}
+{!check_edit_pages}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+{/!check_edit_pages}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+	</tr>
+<!-- Row6 -->
+	<tr>
+{check_edit_site_config}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=configure"><img src="{baseurl}/admin/images/no_lang/site_config.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_site_config}</a></div></td>
+{/check_edit_site_config}
+
+{check_addon_manager}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=addon_manager"><img src="{baseurl}/admin/images/no_lang/addon_manager.png" class="admin_index_icon" alt=""/><br />{lang_admin_addon_manager}</a></div></td>
+{/check_addon_manager}
+{!check_addon_manager}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+{/!check_addon_manager}
+{check_view_logs}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"><a href="{baseurl}/admin/index.php?action=view_log"><img src="{baseurl}/admin/images/no_lang/view_log.jpg" class="admin_index_icon" alt=""/><br />{lang_admin_view_log}</a></div></td>
+{/check_view_logs}
+{!check_view_logs}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+{/!check_view_logs}
+	<td style="width:25%;" valign="top"><div style="text-align:center;"></div></td>
+	</tr>
+	<tr>
+	{addon_links}
+	</tr>
+</table></td>
+</tr>
+</table>

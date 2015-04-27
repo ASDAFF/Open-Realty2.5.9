@@ -1,0 +1,37 @@
+{no_search_results_block}
+<div class="no_results">{lang_no_results_msg}<br />
+<a href="{save_search_link}">{lang_no_results_save_search_link_text}</a> {lang_no_results_save_search}
+</div>
+{/no_search_results_block}
+<table class="form_main">
+	<tr>
+		<td valign="top">
+			{featured_listings_vertical}
+		</td>
+		<td valign="top">
+			<h3>{lang_search_listings}</h3>
+			{browse_all_listings}
+			{templated_search_form}
+			<h4>{lang_find_the_perfect_property}</h4>
+			<form action="index.php" method="get">
+				<table>
+					{search_fields}
+					<tr>
+						<td align="center" colspan="2">
+							{show_only_with_images} <strong>{lang_show_only_with_images}</strong><br />
+							{show_only_with_vtours} <strong>{lang_show_only_with_vtours}</strong>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" colspan="2">
+							<input type="hidden" name="action" value="searchresults" />
+							{search_type}
+							<input type="submit" />
+						</td>
+					</tr>
+				</table>
+			</form>
+			{/templated_search_form}
+		</td>
+	</tr>
+</table>

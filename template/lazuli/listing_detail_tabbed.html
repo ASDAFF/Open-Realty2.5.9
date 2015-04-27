@@ -1,0 +1,151 @@
+
+<!-- bof "listing_detail_tabbed.html" -->
+{hide_printer_friendly}
+{tabbed_js}
+{next_prev}
+<div id="listing_detail_tabbed" class="tab-pane">
+	<script type="text/javascript">
+	tp1 = new WebFXTabPane( document.getElementById("listing_detail_tabbed"), false);
+	</script>
+	<!-- Bof "tabPage1" -->
+	<div id="tabPage1" class="tab-page">
+		<span class="tab">Details</span>
+		<script type="text/javascript">tp1.addTabPage( document.getElementById("tabPage1"));</script>
+{/hide_printer_friendly}
+		<div id="listing_detail_tabbed_header">
+			<h3>{listing_title}</h3>
+{hide_printer_friendly}
+			{show_listed_by_admin_block}
+			<h4>{lang_listed_by} <a href="{listing_agent_link}">{listing_agent_first_name} {listing_agent_last_name}</a></h4>
+			{/show_listed_by_admin_block}
+{/hide_printer_friendly}
+			<h4>{headline}</h4>
+		</div>
+		<div id="listing_detail_tabbed_fieldslinks">
+			<div class="float_left_half">
+				{top_left}
+			</div>
+			<div>
+				{top_right}
+			</div>
+			<div class="clear">
+				{center}
+			</div>
+			<div class="float_left_half">
+				<div class="features_ticked">
+					{feature1}
+				</div>
+			</div>
+			<div>
+				<div class="features_ticked">
+					{feature2}
+				</div>
+			</div>
+			<div class="clear">&nbsp;</div>
+{hide_printer_friendly}
+			<div class="float_left_half">
+				<p class="bold">{lang_tools}</p>
+				<p>{contact_agent_link}</p>
+				<p>{link_calc}</p>
+{check_member}
+				<p>{link_add_favorites}</p>
+{/check_member}
+				<p>{link_printer_friendly}</p>
+				<p>{link_email_friend}</p>
+			</div>
+			<div>
+				<p class="bold">{lang_neighborhood_links}</p>
+				<p>{link_map}</p>
+				<p>{link_yahoo_school}</p>
+				<p>{link_yahoo_neighborhood}</p>
+			</div>
+			<div class="clear">&nbsp;</div>
+{/hide_printer_friendly}
+			<div class="float_left_half">
+				{bottom_left}
+			</div>
+			<div>
+				{bottom_right}
+			</div>
+{hide_printer_friendly}
+			<div class="clear">
+				<hr />
+				{lang_this_listing_has_been_viewed} <b>{hitcount}</b> {lang_times}.
+			</div>
+		</div>
+	</div>
+	<!-- Eof "tabPage1" -->
+	<!-- Bof "tabPage2" -->
+	<div id="tabPage2" class="tab-page">
+		<span class="tab">Images</span>
+		<script type="text/javascript">tp1.addTabPage( document.getElementById("tabPage2"));</script>
+		<div id="listing_detail_tabbed_header">
+			<h3>{listing_title}</h3>
+			{show_listed_by_admin_block}
+			<h4>{lang_listed_by} <a href="{listing_agent_link}">{listing_agent_first_name} {listing_agent_last_name}</a></h4>
+			{/show_listed_by_admin_block}
+			<h4>{headline}</h4>
+		</div>
+		<div class="clear">&nbsp;</div>
+		<div id="listing_detail_tabbed_fieldslinks">
+			<div id="listing_detail_tabbed_mainimage">
+				<p>{main_image_java}</p>
+				<p id="tabbed_thumbs">{listing_images_java}</p>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Eof "tabPage2" -->
+	<!-- Bof "tabPage3" -->
+	<div id="tabPage3" class="tab-page">
+		<span class="tab">Slideshow</span>
+		<script type="text/javascript">tp1.addTabPage( document.getElementById("tabPage3"));</script>
+		<div id="listing_detail_tabbed_header">
+			<h3>{listing_title}</h3>
+			{show_listed_by_admin_block}
+			<h4>{lang_listed_by} <a href="{listing_agent_link}">{listing_agent_first_name} {listing_agent_last_name}</a></h4>
+			{/show_listed_by_admin_block}
+			<h4>{headline}</h4>
+		</div>
+		<div class="clear">&nbsp;</div>
+		<div id="listing_detail_tabbed_fieldslinks">
+			<div id="listing_detail_tabbed_mainimage">
+				<p>{slideshow_images}</p>
+			</div>
+		</div>
+	</div>
+	<!-- Eof "tabPage3" -->
+	<!-- Bof "tabPage4" -->
+	<div id="tabPage4" class="tab-page">
+		<span class="tab">Agent Info</span>
+		<script type="text/javascript">tp1.addTabPage( document.getElementById("tabPage4"));</script>
+		<div id="listing_detail_tabbed_header">
+			<h3>{listing_title}</h3>
+{/hide_printer_friendly}
+			{show_listed_by_admin_block}
+			<h4>{lang_listed_by} <a href="{listing_agent_link}">{listing_agent_first_name} {listing_agent_last_name}</a></h4>
+			{/show_listed_by_admin_block}
+			<h4>{headline}</h4>
+		</div>
+		<div class="clear">
+			{listing_agent_field_phone_block}<p>{listing_agent_field_phone}</p>{/listing_agent_field_phone_block}
+			{listing_agent_field_mobile_block}<p>{listing_agent_field_mobile}</p>{/listing_agent_field_mobile_block}
+			{listing_agent_field_fax_block}<p>{listing_agent_field_fax}</p>{/listing_agent_field_fax_block}
+			{listing_agent_field_homepage_block}<p>{listing_agent_field_homepage}</p>{/listing_agent_field_homepage_block}
+			{listing_agent_field_info_block}<p>{listing_agent_field_info}</p>{/listing_agent_field_info_block}
+		</div>
+{hide_printer_friendly}
+	</div>
+	<!-- Eof "tabPage4" -->
+	{vtour_tab_block}
+	<!-- Bof "tabPage5" -->
+	<div id="tabPage5" class="tab-page">
+		<span class="tab">Virtual Tour</span>
+		<script type="text/javascript">tp1.addTabPage( document.getElementById("tabPage5"));</script>
+		{show_vtour}
+	</div>
+	<!-- Eof "tabPage5" -->
+	{/vtour_tab_block}
+</div>
+{/hide_printer_friendly}
+<!-- bof "listing_detail_tabbed.html" -->

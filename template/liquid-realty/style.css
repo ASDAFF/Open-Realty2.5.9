@@ -1,0 +1,375 @@
+html {
+	text-align: center;
+	font: 11px "Trebuchet MS", Verdana, Arial, Helvetica, Sans-serif;
+	background-color: #fff;
+	color: #4b4b4b;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	width: 800px;
+	text-align: left;
+}
+
+h2.heading {
+	font: bold 18px/1.4 "Trebuchet MS", Verdana, Arial, Helvetica, Sans-serif;
+	text-transform: uppercase;
+	background-color: inherit;
+	color: #4b4b4b;
+	margin: 20px 0 0 0;
+	padding: 0 0 1px 25px;
+	border-bottom: 1px solid #ddd;
+	background: #fff url('{template_url}/images/icon_star.gif') left no-repeat;
+	color: inherit;
+	clear: both;
+}
+
+h2 span {
+	background-color: inherit;
+	color: #0097ff;
+}
+
+h3{
+
+font: bold 16px/1.3 "Trebuchet MS", Verdana, Arial, Helvetica, Sans-serif;
+	background-color: inherit;
+	color: #4b4b4b;
+	margin: 20px 0 0 0;
+	padding: 0 0 1px 25px;
+	border-bottom: 1px solid #ddd;
+	background: #fff url('{template_url}/images/icon_house.gif') left no-repeat;
+	color: inherit;
+	clear: both;
+
+}
+
+h3.heading {
+	margin: 5px 0px 0px 0px;
+	padding: 5px 0px 5px 5px;
+	background: #f0f0f0;
+}
+
+h4{
+
+font: bold 16px/1.3 "Trebuchet MS", Verdana, Arial, Helvetica, Sans-serif;
+	background-color: inherit;
+	color: #333;
+	margin: 20px 0 0 0;
+	padding: 0 0 1px 25px;
+	border-bottom: 1px solid #ddd;
+	clear: both;
+
+}
+
+h4.heading {
+	margin: 5px 0px 0px 0px;
+	padding: 5px 0px 5px 5px;
+	background: transparent;
+}
+
+p {
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+ul {
+font-size: 12px;
+
+}
+
+a:link, a:visited {
+	background-color: inherit;
+	color: #333;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	background-color: inherit;
+	color: #555;
+	text-decoration: underline;
+}
+
+/* Main navigation */
+
+ul#nav {
+	margin: 0;
+	padding: 0 0 0 6px;
+	width: 794px;
+	height: 44px;
+	background: #000 url('{template_url}/images/nav_bg.gif') repeat-x;
+	color: inherit;
+}
+
+ul#nav li {
+	float: left;
+	margin: 0;
+	padding: 15px 0 0 0;
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+ul#nav li a {
+	text-decoration: none;
+	padding: 13px 30px 14px 30px;
+}
+
+ul#nav li a:link, ul#nav li a:visited {
+	background-color: inherit;
+	color: #fff;
+}
+
+ul#nav li a:hover, ul#nav li a:active {
+	
+	color: #0097ff;
+}
+/* Sub navigation */
+ul#subnav {
+	font-size: 10px;
+	margin: 0;
+	padding: 0 0 0 30px;
+	width: 770px;
+	height: 31px;
+	background: #999 url('{template_url}/images/subnav_bg.gif') repeat-x;
+	color: inherit;
+}
+
+ul#subnav li {
+	float: left;
+	margin: 0;
+	padding: 9px 0 0 0;
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+ul#subnav li a {
+	text-decoration: none;
+	padding: 7px 20px 7px 20px;
+	background: transparent url('{template_url}/images/subnav_sep.gif') no-repeat left;
+}
+
+ul#subnav li a:link, ul#subnav li a:visited {
+	background-color: inherit;
+	color: #303030;
+}
+
+ul#subnav li a:hover, ul#subnav li a:active {
+	color: #0097ff;
+}
+
+ul#subnav li#subnavfirst a:link, ul#subnav li#subnavfirst a:visited {
+	background: transparent;
+	background-color: inherit;
+	color: #303030;
+}
+
+ul#subnav li#subnavfirst a:hover, ul#subnav li#subnavfirst a:active {
+	color: #0097ff;
+}
+
+div#company-name {
+	margin:0px;
+	height:45px;
+	background-color: inherit;
+	color: #0097ff;
+	font: bold 25px/1.8 "Trebuchet MS", Verdana, Arial, Helvetica, Sans-serif;
+	text-transform: uppercase;
+}
+
+div#rss{
+
+	text-align:right;
+	padding:4px;
+
+}
+
+div#rss a{
+
+	text-align:right;
+	padding-right:8px;
+
+}
+
+.button {
+text-align: right;
+margin-bottom: 10px;
+}
+
+.button img {
+border-style: none;
+}
+
+.right {
+float: right;
+}
+
+div#banner {
+	margin: 0;
+	background: url('{template_url}/images/banner.jpg') no-repeat left;
+	height:212px;
+	width:800px;
+	
+}
+
+div#banner .search{
+	margin:30px 20px 30px 20px;
+	float: right;
+	overflow:auto;
+	height:150px;
+	width:260px;
+	padding-right:10px;
+	color: #666;
+	
+
+}
+
+div#banner .search p{
+	padding-top:5px;
+	font-size:10px;
+
+}
+
+div#quote{
+	color: #000;
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+	background-color: #ccc;
+	padding: 30px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Footer style */
+
+div#foot {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 800px;
+	height: 80px;
+	background-color: #ededed;
+	color: #4b4b4b;
+	text-align: center;
+}
+
+div#foot p {
+	padding: 9px 0 0 0;
+}
+
+div#foot p a {
+	text-decoration: none;
+}
+
+div#foot p a:link, div#foot p a:visited {
+	background-color: inherit;
+	color: #4b4b4b;
+	text-decoration: underline;
+}
+
+div#foot p a:hover, div#foot p a:active {
+	background-color: inherit;
+	color: #000;
+	text-decoration: underline;
+}
+
+/* BLOG VIEW
+*******************************************************************************/
+.blog_date {
+clear:both;
+color:#808080;
+margin-bottom:3px;
+font-size:10px;
+}
+.blog_title{
+font-weight:bold;
+font-size:18px;
+color:#9FB6D5;
+border-bottom:1px dotted;
+}
+.blog_summary{
+padding:7px;
+color:#808080;
+}
+.blog_story_link_line{
+padding-left:7px;
+padding-bottom:5px;
+}
+a.blog_story_link{
+text-decoration:none !important;
+}
+.blog_entry_footer {
+background-color:#9FB6D5;
+display:block;
+height:15px;
+padding-left:5px;
+padding-top:2px;
+padding-right:5px;
+margin-bottom:15px;
+font-size:10px;
+}
+
+.blog_byline{
+float:left;
+}
+.blog_comments{
+float:right;
+}
+.blog_full_article{
+padding:7px;
+color:#808080;
+}
+.blog_article_comments_header{
+font-weight:bold;
+font-size:18px;
+color:#053280;
+margin-bottom:10px;
+}
+
+.blog_article_comment_item{
+margin-left:10px;
+margin-right:10px;
+padding-bottom:5px;
+padding-top:5px;
+}
+.blog_article_comment_title_row{
+background-color:#9FB6D5;
+display:block;
+height:15px;
+padding-left:5px;
+padding-top:2px;
+padding-right:5px;
+margin-bottom:15px;
+font-size:10px;
+}
+.blog_article_comment_text {
+padding-left:5px;
+padding-right:5px;
+color:#808080;
+}
+
+.add_comment_block{
+padding-left:20px;
+margin-top:10px;
+}
+
+.blog_leave_comment_text {
+color:#053280;
+}
+.blog_leave_comment_submit{
+border-color:#053280;
+font-weight:bold;
+font-size:10px;
+}
+
+.blog_leave_comment_text_textarea{
+width:500px;
+height:75px;
+}
+
+/* TEMPLATE SELECTOR
+ ============================================================================ */
+form.template_selector {margin:0; padding:0;}
+form.template_selector fieldset {border:none;}
+select#select_users_template {width:150px;}

@@ -1,0 +1,158 @@
+{tabbed_js}
+{next_prev}
+<div style="background:#ffffff;" class="tab-pane" id="tabPane1">
+<script type="text/javascript">
+tp1 = new WebFXTabPane( document.getElementById( "tabPane1" ), false );
+//tp1.setClassNameTag( "dynamic-tab-pane-control-luna" );
+//alert( 0 )
+</script>
+	<div class="tab-page" id="tabPage1">
+		<h2 class="tab">Listing Details</h2>
+		<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage1" ) );</script>
+			<table width="100%" border="0">
+				<tr>
+					<td>
+						<h3>{listing_title}</h3>
+						{show_listed_by_admin_block}<h4>{lang_listed_by} <a href="{listing_agent_link}">{listing_agent_first_name} {listing_agent_last_name}</a></h4>{/show_listed_by_admin_block}
+						<h4>{headline}</h4>
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0">
+				<tr>
+					<td>
+						{top_left}
+					</td>
+					<td>
+						{top_right}
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0">
+				<tr>
+					<td>
+						{center}
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0">
+				<tr>
+					<td>
+						{feature1}
+					</td>
+					<td>
+						{feature2}
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0">
+				<tr>
+					<td>
+						{bottom_left}
+					</td>
+					<td>
+						{bottom_right}
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0">
+				<tr>
+					<td>
+						{hide_printer_friendly}<strong>{lang_tools}</strong><br />
+						{contact_agent_link}<br />
+						{link_calc}<br />
+						{check_member}{link_add_favorites}<br />{/check_member}
+						{link_printer_friendly}<br />
+						{link_email_friend}<br /><br />
+						<strong>{lang_neighborhood_links} </strong><br />
+						{link_map}<br />
+
+						{link_yahoo_school}<br />
+						{link_yahoo_neighborhood}<br />{/hide_printer_friendly}
+					</td>
+				</tr>
+			</table>
+			<table align="center">
+				<tr>
+					<td>
+						<br /><br />{lang_this_listing_has_been_viewed} <b>{hitcount}</b> {lang_times}.
+					</td>
+				</tr>
+			</table>
+	</div>
+	<div class="tab-page" id="tabPage2">
+		<h2 class="tab">Images</h2>
+		<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage2" ) );</script>
+			<table width="100%" border="0">
+				<tr>
+					<td>
+						<h3>{listing_title}</h3>
+						{show_listed_by_admin_block}<h4>{lang_listed_by} <a href="{listing_agent_link}">{listing_agent_first_name} {listing_agent_last_name}</a></h4>{/show_listed_by_admin_block}
+						<h4>{headline}</h4>
+					</td>
+				</tr>
+			</table>
+			<table align="center" width="100%" border="0">
+				<tr>
+					<td align="center" valign="top">
+						{main_image_java}<br />
+						{listing_images_java_rows}<br />
+					</td>
+				</tr>
+			</table>
+	</div>
+	<div class="tab-page" id="tabPage3">
+		<h2 class="tab">Slideshow</h2>
+		<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage3" ) );</script>
+			<table width="100%" border="0">
+				<tr>
+					<td>
+						<h3>{listing_title}</h3>
+						{show_listed_by_admin_block}<h4>{lang_listed_by} <a href="{listing_agent_link}">{listing_agent_first_name} {listing_agent_last_name}</a></h4>{/show_listed_by_admin_block}
+						<h4>{headline}</h4>
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0">
+				<tr>
+					<td align="center">
+						{slideshow_images}<br />
+					</td>
+				</tr>
+			</table>
+	</div>
+
+	<div class="tab-page" id="tabPage5">
+		<h2 class="tab">Agent Info</h2>
+		<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage5" ) );</script>
+			<table width="100%" border="0">
+				<tr>
+					<td>
+						<h3>{listing_title}</h3>
+						{show_listed_by_admin_block}<h4>{lang_listed_by} <a href="{listing_agent_link}">{listing_agent_first_name} {listing_agent_last_name}</a></h4>{/show_listed_by_admin_block}
+						<h4>{headline}</h4>
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0">
+				<tr>
+					<td>
+						{show_listed_by_admin_block}<strong>{lang_listed_by}: </strong><a href="{listing_agent_link}">{listing_agent_first_name} {listing_agent_last_name}</a><br />{/show_listed_by_admin_block}
+						{listing_agent_field_phone_block}{listing_agent_field_phone}<br />{/listing_agent_field_phone_block}
+						{listing_agent_field_mobile_block}{listing_agent_field_mobile}<br />{/listing_agent_field_mobile_block}
+						{listing_agent_field_fax_block}{listing_agent_field_fax}<br />{/listing_agent_field_fax_block}
+						{listing_agent_field_homepage_block}{listing_agent_field_homepage}<br />{/listing_agent_field_homepage_block}
+						{listing_agent_field_info_block}{listing_agent_field_info}<br />{/listing_agent_field_info_block}
+						{contact_agent_link}
+					</td>
+				</tr>
+			</table>
+	</div>
+	{vtour_tab_block}
+	<div class="tab-page" id="tabPage6">
+		<h2 class="tab">Virtual Tours</h2>
+		<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage6" ) );</script>
+		{show_vtour}
+	</div>
+	{/vtour_tab_block}
+</div>

@@ -1,0 +1,20 @@
+<table width="550" border="0" align="left" cellpadding="5" cellspacing="5">
+      <tr>
+        <td align="left">
+<form action="index.php" method="get" name="class_search_form" id="class_search_form">
+ 
+  <div align="left">
+   <fieldset>
+    <legend>{lang_property_class_lookup_legend}</legend>
+    <input checked="checked" name="pclass[]" value="" type="checkbox" id="class0" onclick="SearchClassCheckALL()" />
+    {lang_all_listings}<br />
+    {property_class_checkboxes}
+    <br />
+     <input name="action" id="action" value="" type="hidden" />
+     <input name="build_search" value="{lang_search_listings}" type="button" onclick="document.class_search_form.action.value='search_step_2';document.getElementById('class_search_form').submit();" />
+     <input name="view_search_results" value="{lang_view_listings}" type="button" onclick="document.class_search_form.action.value='searchresults';document.getElementById('class_search_form').submit();" />
+    </fieldset>
+  </div>
+</form></td>
+      </tr>
+</table>

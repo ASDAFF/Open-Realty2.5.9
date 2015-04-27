@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset={charset}" />
+<!-- stylesheet -->
+<link rel="stylesheet" type="text/css" href="{template_url}/screen.css" />
+<!-- <link rel="stylesheet" type="text/css" href="{template_url}/tabbed_pages.css" /> -->
+<!-- javascript -->
+<script type="text/javascript" src="{template_url}/javascript/left_links.js"></script>
+<meta name="generator" content="Open-Realty 2.X.X" />
+<meta name="robots" content="all" />
+<!-- Includes for embedded Open-Realty codes -->
+<meta name="keywords" content="{load_meta_keywords_raw}" />
+<meta name="description" content="{load_meta_description_raw}" />
+<!-- rss feeds -->
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_lastmodified_link_title}" href="index.php?action=rss_lastmodified_listings" />
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_featured_link_title}" href="index.php?action=rss_featured_listings" />
+{load_css_style}
+{load_css_editor}
+<title>{site_title}</title>
+{load_js}
+{license_tag}
+</head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+	<div id="mborder">
+		<!-- Begin Header -->
+		<div id="header">
+			<div id="logo">
+				<h1 title="{company_name}">{company_name}</h1>
+				<p>Add your tag line here...</p>
+			</div>
+			<div id="nav-top">
+				<ul id="nav">
+					<li><a href="{url_index}" title="Home Page">Home Page</a></li>
+					<li><a href="{page_link_3}" title="">About Us</a></li>
+					<li><a href="{url_search}" title="Search Listings">Search Listings</a></li>
+					<li><a href="#" title="Site Map">Site Map</a></li><!-- for seo -->
+				</ul>
+			</div>
+		</div>
+		<!-- End Header -->
+		<!-- Begin Faux Columns -->
+		<div id="faux">
+			<!-- Begin Left Column -->
+			<div id="leftcolumn">
+				<div class="categories"><h2>Menu</h2></div>
+				<!--- START MENU HTML -->
+				<div id="dhtmlgoodies_menu">
+					<ul>
+						<li><a href="{url_index}" title="Home Page">Home Page</a></li>
+						<li><a href="{page_link_3}" title="">About Us</a></li>
+						<li><a href="{page_link_2}" title="">Contact Us</a></li>
+						<li>
+							<a href="{url_search_results}" title="View All Listings">View All Listings</a>
+							<ul>
+								<li><a href="{url_search}" title="Search Listings">Search Listings</a></li>
+								<li><a href="{url_search_rental}" title="Rental Search">Search Rentals</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Search</a>
+							<ul>
+								<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=1" title="Homes">Homes</a></li>
+								<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=3" title="Farms">Farms</a></li>
+								<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=4" title="Commercial">Commercial</a></li>
+								<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=2" title="Land">Land</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="{page_link_4}" title="Contact us">Contact us</a>
+							<ul>
+								<!-- <li><a href="#">Support</a></li> -->
+								<li><a href="index.php?action=contact_agent&amp;popup=yes&amp;agent_id=1" onclick="window.open(this.href,'_blank','location=0,status=0,scrollbars=1,toolbar=0,menubar=0,width=500,height=520');return false" title="Contact Admin">Contact Admin</a></li>
+							</ul>
+						</li>
+						<li><a href="{url_blog}" title="View Blog">View Blog</a></li>
+						<li><a href="{url_view_agents}" title="">View Agents</a></li>
+						<li><a href="{url_view_calculator}" onclick="window.open(this.href,'_blank','location=0,status=0,scrollbars=1,toolbar=0,menubar=0,width=500,height=520');return false" title="Loan Calculators">Loan Calculators</a></li>
+						{check_member}
+						<li><a href="#" title="Admin Section"><b>Admin Section</b></a></li>
+						<li><a href="{url_edit_profile}" title="Edit Profile">Edit Profile</a></li>
+						<li><a href="{url_view_favorites}" title="View Favorites">View Favorites</a></li>
+						<li><a href="{url_view_saved_searches}" title="Saved Searches">Saved Searches</a></li>
+						<li><a href="{url_logout}" title="Logout">Logout</a></li>
+						{/check_member}
+						{check_guest}
+						<li><a href="{url_member_signup}" title="Member Signup">Member Signup</a></li>
+						<li><a href="{url_member_login}" title="Member Login">Member Login</a></li>
+						{/check_guest}
+						<li>
+							<a href="#" title="RSS Feeds">RSS Feeds</a>
+							<ul>
+								<li><a href="{baseurl}/index.php?action=rss_featured_listings" title="{lang_rss_featured_link_title}">{lang_rss_featured_link_title}</a></li>
+								<li><a href="{baseurl}/index.php?action=rss_lastmodified_listings" title="{lang_rss_lastmodified_link_title}">{lang_rss_lastmodified_link_title}</a></li>
+							</ul>
+						</li>
+					</ul>
+					{check_guest}
+					<hr class="sb" />
+					<div class="featurebox">
+						<b>My Property Tools</b><br />
+						<dl>
+							<dd><a href="{url_view_favorites}" title="View Favorites">View Favorites</a></dd>
+							<dd><a href="{url_view_saved_searches}" title="Saved Searches">Saved Searches</a></dd>
+						</dl>
+					</div>
+					{/check_guest}
+					<hr class="sb" />
+					<div class="featurebox">
+						<b>Manage My Listings</b><br />
+						<p>
+							Click <a href="{baseurl}/admin/" title="">here</a> to login to your listings account to edit, renew or create ads.
+							<a href="{baseurl}/admin/" title="">Login Here</a><br />
+						</p>
+						<p><strong>Choose Template</strong>{template_select}</p>
+					</div>
+				</div>
+				<!-- END MENU HTML-->
+			</div>
+			<!-- End Left Column -->
+			<!-- Begin Right Column -->
+			<div id="rightcolumn" class="content">
+				<!-- Open-Realty content start here -->
+				{content}
+				<!-- Open-Realty content end here //-->
+			</div>
+			<!-- End Right Column -->
+			<div class="clear"></div>
+		</div>
+		<!-- End Faux Columns --> 
+		<!-- Begin Footer -->
+		<div id="footer" class="align-center">
+			<p>
+				Copyright &copy; <?php echo date('Y'); ?> <a href="{url_index}" title="{company_name}">{company_name}</a> | 
+				<!-- design copyright -->
+				By: <a href="#" title="Design By Name Here">Name Here</a> | 
+				<!-- design copyright //-->
+				<a href="{page_link_4}" title="Privacy Policy">Privacy Policy </a> | <a href="{page_link_4}" title="Terms &amp; Conditions">Terms &amp; Conditions </a> | Powered by <a href="http://www.open-realty.org/" title="Open-Realty">Open-Realty</a> | <a href="#wrapper" title="Top">Top</a>
+				<!-- Valid <a href="http://jigsaw.w3.org/css-validator/check/referer"><strong>CSS</strong></a> | Valid <a href="http://validator.w3.org/check/referer"><strong>XHTML</strong></a> -->
+			</p>
+		</div>
+		<!-- End Footer -->
+	</div>
+</div>
+<!-- End Wrapper -->
+{load_js_last}
+{license_tag}
+</body>
+</html>

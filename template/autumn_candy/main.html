@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset={charset}" />
+<style type="text/css">
+<!--
+.style4 {
+	font-weight: normal;
+	color: #6A4800;
+	font-size: large;
+	font-family: Arial, "Arial Rounded MT Bold", "Comic Sans MS";
+	font-style: italic;
+}
+-->
+</style>
+<meta name="keywords" content="{load_meta_keywords_raw}" />
+<meta name="description" content="{load_meta_description_raw}" />
+{load_css_style}
+{load_css_editor}
+<title>{site_title}</title>
+{load_js}
+{license_tag}
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_lastmodified_link_title}" href="index.php?action=rss_lastmodified_listings" />
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_featured_link_title}" href="index.php?action=rss_featured_listings" />
+</head>
+<body>
+<div style="text-align:center; margin-left:auto; margin-right:auto;">
+	<div id="pagewidth">
+		<div id="header">
+			<div class="time_date">
+				<!-- Date and time script  -->
+				<script type="text/javascript">
+				<!-- Begin
+				var days=new Array(7);
+				days[1]="{lang_monday}";
+				days[2]="{lang_tuesday}";
+				days[3]="{lang_wednesday}";
+				days[4]="{lang_thursday}";
+				days[5]="{lang_friday}";
+				days[6]="{lang_saturday}";
+				days[0]="{lang_sunday}";
+				var months=new Array(13);
+				months[1]="{lang_january}";
+				months[2]="{lang_february}";
+				months[3]="{lang_march}";
+				months[4]="{lang_april}";
+				months[5]="{lang_may}";
+				months[6]="{lang_june}";
+				months[7]="{lang_july}";
+				months[8]="{lang_august}";
+				months[9]="{lang_september}";
+				months[10]="{lang_october}";
+				months[11]="{lang_november}";
+				months[12]="{lang_december}";
+				var time=new Date();
+				var ldays=days[time.getDay()];
+				var lmonth=months[time.getMonth() + 1];
+				var date=time.getDate();
+				var year=time.getYear();
+				if (year < 2000)
+				year = year + 1900;
+				document.write(ldays + "," + " " + lmonth + " " + date + "," + " " + year);
+				// End
+				// -->
+				</script>
+			</div>
+		<div class="logo"></div>
+		<div class="slogan">
+			<div style="text-align:left;">OPEN SOURCE SOLUTION TO REAL ESTATE LISTINGS</div>
+		</div>
+	</div>
+	<div id="outer">
+		<div id="inner">
+			<div id="leftcol">
+				<div class="left_content">
+					<div id="navcontainer">
+						<ul id="navlist">
+							<li>
+								<div style="text-align:center;"><br />
+									<span class="style4">Menu</span>
+									<ul>
+										<li><a href="{url_index}" title="Home Page ">Home Page</a></li>
+										<li><a href="{page_link_3}" title="">About Us</a></li>
+										<li><a href="{page_link_2}" title="">Contact Us</a></li>
+										<li><a href="{url_search_results}" title="View All Listings">View All Listings</a></li>
+										<li><a href="{url_search}" title="Search Listings">Search Listings</a></li>
+										<li><a href="{url_view_calculator}" onclick="window.open(this.href,'_blank','location=0,status=0,scrollbars=1,toolbar=0,menubar=0,width=500,height=520');return false" title="Loan Calculators">Loan Calculators</a></li>
+										<li><a href="{url_blog}" title="View Blog">View Blog</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><hr /></li>
+							<li>
+								<div style="text-align:center;">
+									<span class="style4">Quick Search</span>
+									<ul>
+										<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=1" title="Homes">Homes</a></li>
+										<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=3" title="Farms">Farms</a></li>
+										<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=4" title="Commercial">Commercial</a></li>
+										<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=2" title="Land">Land</a></li>
+										<li><a href="{url_search_rental}" title="Rentals">Rentals</a></li>
+										<li><a href="{url_view_agents}" title="">View Agents</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><hr /></li>
+							<li>
+								<div style="text-align:center;">
+									<span class="style4">Members</span>
+									<ul>
+										{check_member}
+										<li><a href="{url_edit_profile}" title="Edit Profile">Edit Profile</a></li>
+										<li><a href="{url_view_favorites}" title="View Favorites">View Favorites</a></li>
+										<li><a href="{url_view_saved_searches}" title="Saved Searches">Saved Searches</a></li>
+										<li><a href="{url_logout}" title="Logout">Logout</a></li>
+										{/check_member}
+										{check_guest}
+										<li><a href="{url_member_signup}" title="Member Signup">Member Signup</a></li>
+										<li><a href="{url_member_login}" title="Member Login">Member Login</a></li>
+										{/check_guest}
+									</ul>
+								</div>
+							</li>
+							<li><strong>Choose Template</strong>{template_select}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="maincol" >
+				<div class="content">
+					<div style="text-align:left;">
+					<!-- OR files go here --><br />
+					{content}
+				</div>
+				</div>
+			</div>
+			<div class="clr"></div>
+		<!-- close inner and outer -->
+	</div>
+</div>
+<div id="footer"></div>
+	<div class="clr"></div>
+		<div class="small">
+			<div class="powered_by">
+				<div style="text-align:center;">
+					Powered by <a href="http://open-realty.org">Open-Realty,</a> a product of <a href="http://www.transparent-tech.com">Transparent Technologies</a><br />
+				</div>
+			</div>
+			<div class="clr"></div>
+			<div class="copyright">
+				&copy;2003-2009 Transparent Technologies.&nbsp; All Rights Reserved.<br />
+				Use of this website and information available from it is subject to our <a href="{page_link_4}">Legal Notice and Disclaimer</a>
+			</div>
+		</div>
+	</div><br />
+	<img src="{template_url}/images/feed-icon-14x14.png" alt="" /> <a href="{baseurl}/index.php?action=rss_featured_listings" >{lang_rss_featured_link_title}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="{template_url}/images/feed-icon-14x14.png" alt="" /> <a href="{baseurl}/index.php?action=rss_lastmodified_listings" >{lang_rss_lastmodified_link_title}</a>
+	{select_language}
+	<div class="clr"></div>
+</div>
+{load_js_last}
+</body>
+</html>

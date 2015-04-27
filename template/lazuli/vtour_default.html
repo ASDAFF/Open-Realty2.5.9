@@ -1,0 +1,47 @@
+{vtour_header_block}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Virtual Tour</title>
+{load_meta_description}
+{load_meta_keywords}
+<meta http-equiv="Content-Type" content="text/html;charset={charset}" />
+<meta name="robots" content="index,follow" />
+<meta name="Generator" content="Open-Realty" />
+<link rel="shortcut icon" href="{template_url}/images/favicon.ico" />
+<link href="{template_url}/style_vtour.css" rel="stylesheet" type="text/css" />
+{load_js}
+{license_tag}
+</head>
+<body {onload}>
+{/vtour_header_block}
+<!-- bof "vtour_default.html" -->
+<div id="vtour_default">
+	<div class="vtour_default_float_left">
+		<h3>{listing_field_address_value}</h4>
+		<h3>{listing_field_city_value}, {listing_field_state_value} {listing_field_zip_value}</h4>
+		<h4>Offered at {listing_field_price_value}</h4>
+		<h5>MLS#: {listing_field_mls_value}</h5>
+		<h5>Beds: {listing_field_beds_value}</h5>
+		<h5>Baths: {listing_field_baths_value}</h5>
+		<h5>Sq Feet: {listing_field_sq_feet_value}</h5>
+		<p>{listing_agent_thumbnail_0}</p>
+		<h5>{listing_agent_first_name} {listing_agent_last_name}</h4>
+		<h5>{listing_agent_field_title_value}</h4>
+		<h5>Cell: {listing_agent_field_mobile_value}</h4>
+	</div>
+	<div class="vtour_default_float_right">
+		<p class="vtour_image">{vtour}</p>
+		<p>{vtour_left_button}{vtour_pause_button}{vtour_right_button}{vtour_zoomin_button}{vtour_zoomout_button}</p>
+		<p>{vtour_select}</p>
+		<p>{vtour_description}</p>
+	</div>
+	<div class="clear"></div>
+</div>
+<!-- eof "vtour_default.html" -->
+{vtour_footer_block}
+{load_js_last}
+</body>
+</html>
+{/vtour_footer_block}

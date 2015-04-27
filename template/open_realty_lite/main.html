@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset={charset}" />
+<meta name="keywords" content="{load_meta_keywords_raw}" />
+<meta name="description" content="{load_meta_description_raw}" />
+<title>{site_title}</title>
+<link href="{template_url}/style.css" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_lastmodified_link_title}" href="index.php?action=rss_lastmodified_listings" />
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_featured_link_title}" href="index.php?action=rss_featured_listings" />
+{load_css_editor}
+{load_js}
+{license_tag}
+</head>
+<body>
+<div id="page_margins">
+	<div id="page">
+		<div id="topnav">{check_guest}<a href="{url_member_login}"> Login </a> | <a href="{url_member_signup}">Register</a> | {/check_guest}{check_member}<a href="{url_logout}">Logout</a> |{/check_member} <a href="{page_link_2}"> Contact</a></div>
+		<div id="header">
+			<h1>Your Company</h1>
+			Your keyword rich slogan
+		</div>
+		<div id="sub_header">
+			<div id="sub_header_tag">&nbsp;</div>
+		</div>
+		<div id="nav">
+			<a id="navigation" name="navigation"></a>
+			<div id="nav_main">
+				<ul>
+					<li><a href="{url_blog}" title="View Blog">View Blog</a></li>
+					<li><a href="{page_link_3}" title="About Us">About Us</a></li>
+					<li><a href="{page_link_3}" title="Contact Us">Contact Us</a></li>
+					<li><a href="index.php" title="Home">Home</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main_lite">
+			<div id="col1">
+				<div id="col1_content" class="clearfix">
+					<h2>Main Menu</h2>
+					<ul id="navlist">
+						<li><a href="{url_index}" title="Home Page ">Home Page</a></li>
+						<li><a href="{page_link_3}" title="">About Us</a></li>
+						<li><a href="{page_link_2}" title="">Contact Us</a></li>
+						<li><a href="{url_blog}" title="View Blog">View Blog</a></li>
+						<li><a href="{url_search}" title="Search Listings">Search Listings</a></li>
+						<li><a href="{url_search_rental}" title="Rental Search">Search Rentals</a></li>
+						<li><a href="{url_search_results}" title="View All Listings">View All Listings</a></li>
+						<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=1" title="Homes">Homes</a></li>
+						<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=3" title="Farms">Farms</a></li>
+						<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=4" title="Commercial">Commercial</a></li>
+						<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=2" title="Land">Land</a></li>
+						<li><a href="{url_view_agents}" title="">View Agents</a></li>
+						<li><a href="{url_view_calculator}" onclick="window.open(this.href,'_blank','location=0,status=0,scrollbars=1,toolbar=0,menubar=0,width=500,height=520');return false" title="Loan Calculators">Loan Calculators</a></li>
+						{check_member}
+						<li><a href="{url_edit_profile}" title="Edit Profile">Edit Profile</a></li>
+						<li><a href="{url_view_favorites}" title="View Favorites">View Favorites</a></li>
+						<li><a href="{url_view_saved_searches}" title="Saved Searches">Saved Searches</a></li>
+						<li><a href="{url_logout}" title="Logout">Logout</a></li>
+						{/check_member}
+						{check_guest}
+						<li><a href="{url_member_signup}" title="Member Signup">Member Signup</a></li>
+						<li><a href="{url_member_login}" title="Member Login">Member Login</a></li>
+						{/check_guest}
+						<li><strong>Choose Template</strong>{template_select}</li>
+					</ul>
+					<div id="rss">
+						<h2>Rss feeds</h2>
+						<img src="{template_url}/images/feed-icon-14x14.png" alt="{lang_rss_featured_link_title}" /><a href="index.php?action=rss_featured_listings" title="{lang_rss_featured_link_title}">{lang_rss_featured_link_title}</a><br />
+						<img src="{template_url}/images/feed-icon-14x14.png" alt="{lang_rss_lastmodified_link_title}" /><a href="index.php?action=rss_lastmodified_listings" title="{lang_rss_lastmodified_link_title}">{lang_rss_lastmodified_link_title}</a>
+					</div>
+				</div>
+			</div>
+			<div id="col2">
+				<div id="col2_content">
+					{content}
+				</div>
+			</div>
+			<div id="col3">
+				<div id="col3_content">
+					{check_guest}
+					<h2>Login</h2>
+					<form action="index.php?action=member_login" method="post">
+						<table border="0" cellspacing="0" cellpadding="3">
+						<tr>
+							<td>Login:</td>
+							<td><input type="text" name="user_name" maxlength="30" /></td>
+						</tr>
+						<tr>
+							<td>Password:</td>
+							<td><input type="password" name="user_pass" maxlength="30" /></td>
+						</tr>
+						<tr>
+							<td colspan="2" align="left"><input type="checkbox" name="remember" /><span style="font-size:10px">Remember Me Next Time</span></td>
+						</tr>
+						<tr>
+							<td colspan="2" align="right"><input type="submit" value="Log In" /></td>
+						</tr>
+						</table>
+					</form>
+					{/check_guest}
+					<h2>Site tools</h2>
+					<ul class="yellow_list">
+						<li><a href="{url_view_favorites}" title="My Favorites">My Favorites</a></li>
+						<li><a href="{url_view_saved_searches}" title="My Saved Searches">My Saved Searches</a></li>
+						<li><a href="{url_view_calculator}" title="Loan Calculators">Loan Calculators</a></li>
+					</ul>
+					<div id="featured">
+						<h2>Featured Listings</h2>
+						{featured_listings_vertical}
+					</div>
+				</div>
+				<div id="ie_clearing">&nbsp;</div>
+			</div>
+		</div>
+		<div id="footer">
+			Footer for Copyright and other information<a href="#"></a><br />
+		</div>
+	</div>
+</div>
+{load_js_last}
+</body>
+</html>

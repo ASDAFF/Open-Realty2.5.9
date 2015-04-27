@@ -1,0 +1,32 @@
+
+<!-- bof "search_result_box.html" -->
+{next_prev}
+{search_result_header}
+<div id="box_titles">
+	Sort Listings By: {header_5} : {header_6} : {header_7} : {header_1}
+</div>
+{/search_result_header}
+{search_result_dataset}
+<div class="box_dataset">
+	<div class="box_dataset_image">
+		{image_thumb_1}
+	</div>
+	<div class="box_dataset_dataleft" align="left" valign="top">
+		<p><img src="{template_url}/images/{listing_pclass}.png" width="78" height="11" alt="{listing_pclass}" /></p>
+		<span class="bold">{field_2}</span>
+		<p>{field_1}, {field_4} {field_3}</p>
+		<p>{delete_from_favorite}</p>
+	</div>
+	<div class="box_dataset_dataright" align="right" valign="top">
+		<span class="bold">{field_5}</span>
+		<p>{field_6} beds, {field_7} baths<br />{field_10}</p>
+	</div>
+	<div class="clear"></div>
+	<div class="textarea" colspan="3">
+		{textarea_1_short}
+	</div>
+	<div class="clear"></div>
+</div>
+{/search_result_dataset}
+{next_prev_bottom}
+<!-- eof "search_result_box.html" -->

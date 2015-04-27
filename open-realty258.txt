@@ -1,0 +1,122 @@
+2527	10/18/09 6:46 PM	1	greengiant	Rolling Version to 2.5.8
+2526	10/18/09 6:40 PM	1	greengiant	Fix Blog Comment Moderation. Site COnfig setting for moderation requirement was having no effect. Bug reported on forum
+*2525	10/16/09 5:21 PM	6	ebmarques	Fixed User Manager BUG This is related to bug/feature #952
+2524	10/16/09 12:12 PM	3	ebmarques	Updated GERMAN language files - Many thanks to Gregor (CanariasData)
+2523	10/15/09 11:03 PM	1	greengiant	Fixed Refine Search for Disting Lists, Checkboxes, and Pull Down of Idividual Values options.
+2522	10/15/09 10:14 PM	1	greengiant	Changed reg symbol to &reg; in text file, so it displays correctly in the browser when we include it.
+2521	10/15/09 8:00 PM	1	ebmarques	Fixing typo from commit 2504 (http://support.open-realty.org/showthread.php?t=22773)
+2520	10/15/09 6:49 PM	1	pbflash	Changed a query to use single quotes instead of double quotes as it causes a problems on some servers.
+2519	10/15/09 2:56 PM	1	ebmarques	Fixed new URL to Open-Realty DOCs
+2518	10/15/09 2:06 PM	1	ebmarques	Fixed new notification system - email was being sent without the complete URL at links
+2517	10/15/09 12:43 PM	3	ebmarques	Fixed RSS links at main template files
+2516	10/15/09 12:20 PM	4	ebmarques	Fixed - Changed charset to UTF-8 This is related to bug/feature #944
+2515	10/14/09 11:23 PM	1	greengiant	Refine search now works correctly. This is related to bug/feature #878
+2514	10/14/09 11:20 PM	1	ebmarques	Fixing my last commit - forgot to edit textarea ($message) the same
+2513	10/14/09 6:00 PM	19	ebmarques	Updating language files with the latest new lang variables and also updating French and Dutch language files (Thanks to Niek)
+2512	10/14/09 5:36 PM	1	ebmarques	Complement of commit 2497 - Also fixing ContactFriendForm the same way.
+2511	10/14/09 3:48 PM	1	greengiant	Fix Automatic login after email verification. Also secured email verification system keys. This is related to bug/feature #949
+2510	10/14/09 3:02 PM	8	Mick_	updating all the templates with Ryan's updated notify_listings_default.html template file.
+2509	10/14/09 3:01 PM	1	greengiant	Fix SQL syntax error
+2508	10/14/09 3:00 PM	1	greengiant	Fix SQL error due to double quotes on timestamp.
+2507	10/14/09 2:59 PM	1	greengiant	Fix SQL error notifications.
+2506	10/14/09 2:53 PM	1	greengiant	Set Notification Timestamp at end of run.
+2505	10/14/09 2:43 PM	2	greengiant	Correcting last commit. I commited the wrong file. THis reverts my change and updates the correct file.  Added the css the this template. CSS needs to be inline in order to work on some email clients..
+2504	10/14/09 2:38 PM	1	greengiant	Added the css the this template. CSS needs to be inline in order to work on some email clients..
+2503	10/14/09 2:20 PM	2	greengiant	FIxed view saved search link, and correct lang variables.
+2502	10/14/09 2:16 PM	1	greengiant	Update notification to replace language and URL tags.
+2501	10/14/09 2:12 PM	3	greengiant	Updates to listings notification template. (Still Working commiting so I can test changes on prod server with working email).
+2500	10/13/09 11:26 PM	1	ebmarques	Fixed Last Modified Listing Feed points to wrong site url This is related to bug/feature #950
+2499	10/8/09 11:21 PM	7	ebmarques	Included new template file (notify_listings_default.html) at all site template folders
+2498	10/8/09 11:18 PM	24	ebmarques	Updating all language files
+2497	10/8/09 8:09 PM	1	ebmarques	Fixed bug reported at the Forum (http://support.open-realty.org/showthread.php?t=22728) - changed only $subject and will be waiting user feedback to see if others variables also need to be fixed.
+2496	10/8/09 3:05 AM	1	Mick_	ereg_replace Depriciated in PHP 5.3.0 - Changed ereg_replace to str_replace in the one place we had ereg_replace as it was only replacing a semi-colon with null which str_replace can do just as easily. This is related to bug/feature #948
+2495	10/6/09 11:12 PM	1	greengiant	Move Addthis js, so it is only loaded if the addthis tag is used in the template.
+2494	10/6/09 1:00 PM	1	greengiant	Silly if & else statemenst removed that never got run. Bad code refactoring, afraid to look and see if i did it...
+2493	10/5/09 11:13 PM	1	Mick_	Fixed the addons that I broke with my last commit. Thanks SK
+2492	10/5/09 1:00 AM	1	greengiant	Add fith parameter back to mail() function.. Will Break Mail on PHP 4.3- with safe mode
+2491	10/5/09 12:37 AM	2	greengiant	Allow Referrer Check Override for notification emails, as they will run via cron.
+2490	10/5/09 12:17 AM	1	greengiant	Fix handling of notifications when nothing should be done.
+2489	10/4/09 10:03 PM	11	greengiant	Added in New Listing Notification System. New system runs via a cron job, and can be called manually using the action=send_notifications in your admin area.  This new system is still Alpha Quality.  I have not tested the email delivery or template system yet. I am committing this so i can move it to a test server that has working mail delivery as my local dev box seems to have lost its mail tunnel..   TODO: Update Notification Timestamp after sucessfull run. (Left Out for Debuging Reasons). Finish Removing old "Send Notification" options from Update Listing Screen.. Nothing should call the old system any more. The notify function in the listing_editor.inc.php is DEPRECIATED and will be removed in 2.6.0.
+2488	10/3/09 3:51 AM	2	Mick_	Fixed bug so that missing addons won't show errors on the page. Will instead display a lang'd message for the Function not existing. This is related to bug/feature #941
+2487	10/3/09 3:38 AM	1	Mick_	somebody commented out the 500 server error and committed it so errors were showing again instead of the 500.shtml page.
+2486	10/2/09 3:51 PM	2	greengiant	Update Installer and Upgrade to add column for new listing notification process.
+2485	10/2/09 3:36 PM	1	Mick_	Fixed Bugs: VTours now open using the blank.html file so their template contents is used and not duplicate header tags are created like when used the popup.html template.  Removed unneeded \r\n This is related to bug/feature #945
+2484	10/2/09 3:20 PM	2	Mick_	Adding {isfavorite} tag for Featured listing and Search listing sections to show if a listing is set as favorite by the user (added to docs)
+2483	10/2/09 2:18 PM	1	greengiant	Added Crash By Message back in with Users IP
+2482	9/30/09 9:48 PM	1	greengiant	Remove the 'Call For Price' from a price field when displaying the rawvalue This is related to bug/feature #935
+2481	9/30/09 9:08 PM	1	greengiant	Added Support for putting an "AddThis" button on any page. New Template Tag {addthis_button}
+2480	9/30/09 9:07 PM	1	greengiant	Comment our debug statements from last commit.
+2479	9/30/09 3:03 PM	1	greengiant	When moving two times 100 listings ahead and then 1 or more ahead again. And then 100 back the list of previous pages were wrong. Also fixed some PHP 5.3 issue I noticed why editing the next_prev function. This is related to bug/feature #942
+2478	9/29/09 2:57 PM	18	ebmarques	Finished the inclusion of the Czech language.
+2477	9/29/09 2:47 PM	10	ebmarques	Uploading new language files for CZECH language - Thanks for Thomas (AdriaticOnline.eu)
+2476	9/29/09 2:39 PM	5	ebmarques	Updated DUTCH language files - Thanks to Isabel Heylen
+2475	9/28/09 10:16 PM	4	ebmarques	Fixing "popup.html" admin template file.
+2474	9/24/09 7:20 PM	7	ebmarques	Fixing typos (the same as last commit) - now there is not a single file needing this fix. Thanks to Renato Dias.
+2473	9/24/09 3:28 PM	1	ebmarques	Fixing typos.
+2472	9/22/09 4:07 AM	1	ebmarques	Implemented template tag {listingid} to be used also at featured template files. Waiting approval from Mick and/or Ryan - O-R DOCs will need to be updated. As Forum thread:  http://support.open-realty.org/showthread.php?t=22591
+2471	9/20/09 10:35 PM	1	ebmarques	Fixed admin popup.html was being loaded from frontend site template folder - now from backend site template folder.
+2470	9/20/09 10:39 AM	19	ebmarques	Updating language files, mainly CROATIAN and DUCH. Many thanks to BOJAN and ISABEL HEYLEN.
+2469	9/16/09 3:42 PM	19	ebmarques	Just updating language files of several languages
+2468	9/15/09 6:47 PM	1	ebmarques	Including a missing image defined at the stylesheet (now for OR_small admin site template)
+2467	9/15/09 12:26 PM	1	ebmarques	Uncluding a missing image defined at the stylesheet
+2466	9/10/09 7:23 PM	8	ebmarques	Updating language files - Thanks to Renato Dias.
+2465	9/10/09 5:07 PM	2	ebmarques	Updating Portuguese language files
+2464	9/10/09 4:45 PM	2	ebmarques	Including 2 missing images
+2463	9/10/09 4:29 PM	2	ebmarques	Fixing my last commit
+2462	9/10/09 4:11 PM	51	ebmarques	Implemented MAINTENANCE MODE new feature.
+2461	9/9/09 2:02 PM	9	ebmarques	Removed hardcoded styles from Template Selector function and included the settings at all stylesheets.
+2460	9/9/09 2:37 AM	1	ebmarques	Fixing Bug emailed to me by Renato Dias (Thanks!) - commenting "div" not being closed.
+2459	9/8/09 2:31 AM	1	ebmarques	Fixed email link sent to admin when new user signs up This is related to bug/feature #938
+2458	9/7/09 11:58 PM	1	ebmarques	Fixing a harmless typo
+2457	9/7/09 7:16 PM	8	ebmarques	Fixing a typo at the link changed at commit 2449
+2456	9/7/09 8:59 AM	1	greengiant	Fixed missing sapce in sql statement, that produced a error under certain group/sorting operations. Also added a missing sql error check, durring listing page next_prev generation This is related to bug/feature #939
+2455	9/4/09 4:11 AM	32	ebmarques	Finished work updating all template files.
+2454	9/4/09 3:29 AM	16	ebmarques	Updated "next_prev" files at all site templates.
+2453	9/4/09 2:41 AM	7	ebmarques	Updated all stylesheets with blog settings
+2452	9/4/09 1:09 AM	16	ebmarques	Updated all 2_5_8.inc.php language file with the latest variables (also fixed a typo at the English one).
+2451	9/4/09 12:48 AM	3	ebmarques	Updated CROATIAN files - Congrats and thanks A LOT to Bojan Kukuljan (neon)!
+2450	9/3/09 6:57 PM	2	ebmarques	Just a "makeup" at addon_manager.inc.php, langed texts and removed a hardcoded char that can be inserted at the addon.inc.php when created.
+2449	9/3/09 3:34 PM	2	greengiant	Started correct the refine search, it now sends you to the correct page. (Only Lazuli Template Fixed). Started adding support for displaying previously selected options on the search page, to make refine actually behave like i would expect..  This is related to bug/feature #878
+2448	9/3/09 1:21 AM	20	ebmarques	Added a popup confirmation to the Blog manager Uninstall feature
+2447	9/2/09 10:48 PM	1	Mick_	Updated XHTML compliant general info function thanks to zarathustra
+2446	9/2/09 3:41 AM	1	ebmarques	Including "title" for the links at the Add-on Manager page.
+2445	9/2/09 3:19 AM	1	ebmarques	Fixing uncommented line for debug purposes.
+2444	9/2/09 2:51 AM	2	Mick_	Added a popup confirmation to the Add-on manager Uninstall feature. This is related to bug/feature #933
+2443	9/2/09 2:42 AM	1	ebmarques	Fixed typo at variable name.
+2442	9/2/09 2:35 AM	13	ebmarques	Fixed typo at language files.
+2441	8/31/09 4:06 PM	1	greengiant	Forgot to commit this file on my last commit. Fixed Blog Deletion. This is related to bug/feature #919
+2440	8/31/09 3:42 PM	7	ebmarques	Updated all "main.html" with the "View Blog" link and also updated copyright date.
+2439	8/30/09 7:20 PM	1	ebmarques	Adding rss.html to cms_integration folder
+2438	8/30/09 7:19 PM	1	greengiant	Fixed Blog Deletion. This is related to bug/feature #919
+2437	8/30/09 7:07 PM	6	ebmarques	Adding modified rss.html template file at all site template folders. Complement of commit 2433
+2436	8/30/09 7:04 PM	2	greengiant	Set Admins to have Correct Blog Privilages
+2435	8/30/09 7:03 PM	17	ebmarques	Fixing typo. Complement of commit 2430
+2434	8/30/09 3:54 PM	1	greengiant	Featured Listings, was changing the listing ID set on the page, and breaking links on the listing detail page in certain cases. This is related to bug/feature #932
+2433	8/30/09 3:38 PM	2	greengiant	RSS Feeds break with special chars in Listing Title. This is fixed, but only 100% if users are using MB String in there Open-Realty config, without it we can not guarantee the char encoding type. Should working without MB String as long as database and OR are both set to UTF-8
+2432	8/30/09 3:00 PM	1	greengiant	Fixed: {baseurl} tag not being correctly parsed on blog editor. This is related to bug/feature #928
+2431	8/29/09 6:49 PM	14	Mick_	Added missing blog templates that were missing from all but the Lazuli template.
+2430	8/24/09 7:05 PM	1	Mick_	couple more minor spelling fixes located while doing docs.
+2429	8/23/09 4:22 AM	1	Mick_	just a couple minor spelling fixes
+2428	8/20/09 5:54 PM	1	Mick_	Fixed bug with agents being set to active even when moderation is turned on and active by default is set to No.  This is related to bug/feature #926
+2427	8/20/09 5:32 PM	1	Mick_	fixed user rank sorting bug
+2426	8/20/09 1:41 AM	40	Mick_	Adding redesigned OR Admin template that uses small icons and much better CSS/html markup than before.  Thanks to Harman (h_man72) for the contribution!
+2425	8/20/09 1:37 AM	1	ebmarques	Fixed - Listing template sections truncated (set it to CHAR VARYING(50) in spite of CHAR VARYING(15). The same as "postgres" at new install, upgrade v.1.x and upgrade v.2.x) This is related to bug/feature #917
+2424	8/18/09 11:15 AM	1	ebmarques	Fixed - Invalid HTML in contact.inc.php This is related to bug/feature #924
+2423	8/17/09 5:01 PM	1	ebmarques	Fixed - Send link to friend encoding problem This is related to bug/feature #921
+2422	8/17/09 4:48 PM	2	ebmarques	Fixed template files (included the tag {charset} at meta tag)
+2421	8/16/09 9:49 PM	2	ebmarques	We have a "design" problem related with IExplorer 8 and the listing detail default page (at LAZULI site template). Included a hack to force IE8 to emulate like IE7. I am commiting this change once we may have O-R v.2.5.8 released tomorrow - but this issue may need a better fix on the near future.
+2420	8/16/09 9:20 PM	1	ebmarques	Fixed - Blog Manager textarea size This is related to bug/feature #920
+2419	8/16/09 9:19 PM	1	ebmarques	Removed "asterisks" from the stylesheet (LAZULI - style_logo.css) as IE8 default source code editor, consider each "asterisk" as a break line. :(
+2418	8/16/09 4:23 AM	1	Mick_	Changed the way we detect Windows OS as some Win OS's weren't picked up with the prior function.   Also, as a note on this issue, the function checkdnsrr() is available on Windows PHP as of version 5.3. Will look at this in the future to add the ability to use this on windows in the future. This is related to bug/feature #918
+2417	8/14/09 4:00 PM	1	greengiant	Prevent Filter Session from saving the search if it was a listingID lookup to prevent locking the user from getting back to the editor.  Also fixed the delete and edit links having the wrong IDs. This is related to bug/feature #915
+2416	8/9/09 12:50 AM	1	ebmarques	Fixed Error if Special Characters in email´s Notify This is related to bug/feature #866
+2415	8/9/09 12:43 AM	1	ebmarques	Replaced HTML entities from Spanish language file
+2414	8/1/09 11:18 PM	1	greengiant	Fix license text..
+2413	7/31/09 10:42 PM	1	greengiant	Fix char handling in some search cases
+2412	7/31/09 10:16 PM	1	greengiant	Fix Image Desc not showing on Java Images.. Old bug that I thought I already fixed but forgot to check in.
+2411	7/31/09 1:18 PM	1	Mick_	Used Eduardo's php 4 fix This is related to bug/feature #904
+2410	7/28/09 1:35 AM	1	Mick_	Fixed forum reported bug regarding Add Files not appearing for agents after adding a listing, only admins saw the option. This was due to a typo.
+2409	7/27/09 3:12 PM	29	ebmarques	Updating ALL language files (it should be done before the release of v.2.5.7)
+2408	7/27/09 3:02 PM	1	Mick_	Unlimited featured listings feature was not working... now is because I fixed it This is related to bug/feature #911
+2407	7/27/09 2:40 PM	1	Mick_	Fixed typo on line 197 for blog display This is related to bug/feature #909
+2406	7/26/09 6:42 PM	2	Mick_	Fixed forum report bug with htaccess rewrite rules. Added ^ to the start of all the rewrite rules to ensure they all start at the begining of the uri.   Also fixed unreported bug with contact friend and printer friendly links on the listing detail page not using the baseurl due to not having $config as a global.

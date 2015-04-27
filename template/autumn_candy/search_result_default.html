@@ -1,0 +1,30 @@
+{next_prev}
+<table width="550" cellpadding="3" cellspacing="0">
+{search_result_header}
+<tr>
+<td width="22%" align="center">
+<strong>{header_title}</strong></td>
+<td width="15%" align="center"><strong>{header_6}</strong></td>
+<td width="12%" align="center"><strong>{header_7}</strong></td>
+<td width="22%" align="center"><strong>{header_1}</strong></td>
+<td width="12%" align="center"><strong>{header_4}</strong></td>
+<td width="17%" align="center"><strong>{header_5}</strong></td>
+</tr>
+{/search_result_header}
+{search_result_dataset}
+<tr class="result_row_{row_num_even_odd}">
+<td align="center">{field_title}<br />
+  	  <div class="thumbs">{image_thumb_1}</div>
+  {delete_from_favorite}</td>
+<td align="center">{field_6}</td>
+<td align="center">{field_7}</td>
+<td align="center">{field_1}</td>
+<td align="center">{field_4}</td>
+<td align="center">{field_5}</td>
+<tr class="result_row_{row_num_even_odd}">
+<td colspan="6" valign="top"><div align="justify">{textarea_1}</div>
+</td>
+</tr>
+{/search_result_dataset}
+</table>
+{next_prev_bottom}

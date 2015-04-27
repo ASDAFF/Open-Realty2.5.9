@@ -1,0 +1,30 @@
+{listing_dataset}
+<table class="edit_listings" cellpadding="0" cellspacing="0">
+<tr>
+<th colspan="2">{listing_title} ({listingid})</th>
+<th style="text-align:right;">
+	<a href="{edit_listing_link}"><img src="images/no_lang/listing_editor_edit.jpg" alt="{lang_admin_listings_editor_modify_listing}" width="16" height="16" /></a>
+	<a href="{delete_listing_link}" onclick="return confirmDelete()"><img src="images/no_lang/listing_editor_delete.jpg" alt="{lang_admin_listings_editor_delete_listing}" width="16" height="16" /></a>
+</th>
+</tr>
+<tr>
+	<td rowspan="2" width="125">
+	<a href="{edit_listing_link}"><img src="{raw_image_thumb_1}" alt="{lang_admin_listings_editor_modify_listing}" /></a>
+	</td>
+	<td>
+	{lang_listing_editor_agent}: <a href="{email_agent_link}">{listing_agent_last_name}, {listing_agent_first_name}</a><br />
+	{lang_admin_listings_editor_property_class} {listing_pclass}<br />
+	</td>
+	<td style="text-align:right;">
+	{lang_admin_listings_active}: {listing_active_status}<br />
+	{lang_admin_listings_editor_featured}: {listing_featured_status}<br />
+    {lang_admin_listings_editor_hit_count}: {listing_hit_count}<br />
+	{show_expiration_block}{lang_listing_editor_expiration}: {listing_expiration}{/show_expiration_block}
+	</td>
+</tr>
+<tr>
+<td colspan="2">{listing_notes}</td>
+</tr>
+</table>
+<br />
+{/listing_dataset}

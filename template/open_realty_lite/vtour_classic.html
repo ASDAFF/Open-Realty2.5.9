@@ -1,0 +1,57 @@
+{vtour_header_block}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset={charset}" />
+{load_meta_keywords}
+{load_meta_description}
+{load_css_style}
+{load_css_editor}
+<title>Virtual Tour</title>
+{load_js}
+{license_tag}
+{/vtour_header_block}
+<style type="text/css">
+body,table {
+	background-color:#000080;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 8pt;
+	}
+#desc {
+	overflow:auto;
+	width:80%;
+	height:50px;
+	border: 1px inset;
+	margin-left: auto;
+	margin-right: auto;
+	}
+</style>
+{vtour_header_block}
+</head>
+<body {onload}>
+{/vtour_header_block}
+<div style="text-align: center;">
+	<table width="100%">
+	<tr>
+		<td align="center">
+			<table style="width:335px; height:100px; background-image:url({template_url}/images/vtour_background.gif); background-repeat:repeat-y" >
+			<tr>
+				<td align="center">
+					{vtour}
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					{vtour_left_button}{vtour_pause_button}{vtour_right_button}{vtour_zoomin_button}{vtour_zoomout_button}<br /><br />
+					{vtour_select}<br />
+					{vtour_description}<br />
+				</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+</div>
+{vtour_footer_block}
+</body>
+</html>
+{/vtour_footer_block}

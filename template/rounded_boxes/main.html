@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset={charset}" />
+<meta name="keywords" content="{load_meta_keywords_raw}" />
+<meta name="description" content="{load_meta_description_raw}" />
+{load_css_style}
+{load_css_editor}
+<title>{site_title}</title>
+{load_js}
+{license_tag}
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_lastmodified_link_title}" href="index.php?action=rss_lastmodified_listings" />
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_featured_link_title}" href="index.php?action=rss_featured_listings" />
+</head>
+<body>
+<!-- header + menu starts -->
+<div id="header">
+	<div id="menu_container">
+		<div id="logo">
+			<div id="nav">
+				<a href="{url_index}" title="Home Page "><b>Home Page</b></a>
+				<a href="{page_link_3}" title=""><b>About Us</b></a>
+				<a href="{page_link_2}" title=""><b>Contact Us</b></a>
+				{check_guest}
+				<a href="{url_member_signup}" title="Member Signup"><b>Member Signup</b></a>
+				<a href="{url_member_login}" title="Member Login"><b>Member Login</b></a>
+				{/check_guest}
+			</div>
+			<div id="navm">
+				{check_member} 
+				<a href="{url_edit_profile}" title="My Profile"><b>My Profile</b></a>
+				<a href="{url_view_favorites}" title="My Favorites"><b>My Favorites</b></a>
+				<a href="{url_view_saved_searches}" title="My Searches"><b>My Searches</b></a>
+				<a href="{url_logout}" title="Logout"><b>Logout</b></a>
+				{/check_member}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- header + menu ends -->
+<!-- container start -->
+<div id="container">
+	<!-- left box start -->
+	<div id="lefto">
+		<!-- menu starts -->
+		<div id="navigation">
+			<div class="blokbox">
+				<h2><span>Property menu</span></h2>
+				<div class="blokcontent">
+					<ul class="menu">
+						<li class="menu"><a href="{url_blog}" title="View Blog">View Blog</a></li>
+						<li class="menu"><a href="{url_search}" title="Search Listings">Search Listings</a></li>
+						<li class="menu"><a href="{url_search_rental}" title="Rental Search">Search Rentals</a></li>
+						<li class="menu"><a href="{url_search_results}" title="View All Listings">View All Listings</a></li>
+						<li class="menu"><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=1" title="Homes">Homes</a></li>
+						<li class="menu"><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=3" title="Farms">Farms</a></li>
+						<li class="menu"><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=4" title="Commercial">Commercial</a></li>
+						<li class="menu"><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=2" title="Land">Land</a></li>
+						<li class="menu"><a href="{url_view_agents}" title="">View Agents</a></li>
+						<li class="menu"><a href="{url_view_calculator}" onclick="window.open(this.href,'_blank','location=0,status=0,scrollbars=1,toolbar=0,menubar=0,width=500,height=520');return false" title="Loan Calculators">Loan Calculators</a></li>
+						<li><strong>Choose Template</strong>{template_select} </li>
+					</ul>
+				</div>
+				<div class="blokfooter">
+					<div>&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<!-- menu ends -->
+		<!-- Featured listings vertical starts -->
+		<div id="fvertical">
+			<div class="blokbox">
+				<h2><span>{lang_featured_listings}</span></h2>
+				<div class="blokcontent" style="text-align:center;">{featured_listings_vertical}</div>
+				<div class="blokfooter">
+					<div>&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<!-- Featured listings vertical ends -->
+		<!-- Powered by (banner) starts -->
+		<div id="banner">
+			<div class="blokbox">
+				<h2><span>Product of</span></h2>
+				<div class="blokcontent"><a href="http://www.transparent-tech.com/" ><img src="{template_url}/images/banner.gif" alt="banner" longdesc="http://www.transparent-tech.com/" /></a></div>
+				<div class="blokfooter">
+					<div>&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<!-- Powered by (banner) ends -->
+	</div>
+	<!-- left box ends -->
+	<!-- right box start -->
+	<div id="righto">
+		<!-- main content starts -->
+		<div id="content">
+			<div class="blokbox">
+				<h2><span>Open source solution to real estate listings</span></h2>
+				<div class="blokcontentmain">{content}</div>
+				<div class="blokfooter">
+					<div>&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<!-- main content ends -->
+		<!-- featured listings horizontal -->
+		<div id="fhorizon">
+			<div class="blokbox">
+				<h2><span>{lang_featured_listings}</span></h2>
+				<div class="blokcontent">{featured_listings_horizontal}</div>
+				<div class="blokfooter">
+					<div>&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<!-- featured listings horizontal ends -->
+	</div>
+	<!-- right box ends -->
+	<!-- Footer starts -->
+	<div id="footer">
+		powered by <a href="http://open-realty.org">Open-Realty</a> | Use of this website and information available from it is subject to our <a href="{page_link_4}">Legal Notice &amp; Disclaimer</a><br />
+		<span style="vertical-align:middle;"><img class="img" src="{template_url}/images/feed-icon-14x14.png" alt="" /></span><a href="index.php?action=rss_featured_listings" >{lang_rss_featured_link_title}</a> | <span style="vertical-align:middle;"><img class="img" src="{template_url}/images/feed-icon-14x14.png" alt=""/></span> <a href="index.php?action=rss_lastmodified_listings" >{lang_rss_lastmodified_link_title}</a>
+	</div>
+	<!-- Footer ends -->
+</div>
+<!-- container ends -->
+{load_js_last}
+</body>
+</html>

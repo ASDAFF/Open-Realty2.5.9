@@ -1,0 +1,17 @@
+<table border="2" cellpadding="5" cellspacing="4" bordercolor="734604" class="featured_listings">
+	{featured_listing_block_row repeat="3"}
+	<tr valign="top" bordercolor="#96813F" bgcolor="#ADA67E">
+	{featured_listing_block}
+	 <td bgcolor="#B8B18F">
+	  <div class="thumbs">
+	   <div align="center"><a href="{featured_url}">
+	    {featured_img_block}<img src="{featured_thumb_src}" alt="{lang_click_to_learn_more}" width="{featured_thumb_width}" height="{featured_thumb_height}" /><br />
+       {/featured_img_block}</a></div>
+      </div>
+	  <div align="center"><a href="{featured_url}"><strong>{listing_title}</strong></a><br />
+	  {listing_field_beds} <br /> 
+	 {listing_field_baths} <br />
+     </div></td>
+ {/featured_listing_block}	</tr>
+	{/featured_listing_block_row}
+</table> 

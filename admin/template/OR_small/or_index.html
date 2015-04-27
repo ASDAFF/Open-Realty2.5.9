@@ -1,0 +1,45 @@
+<table class="or_index">
+	<tr>
+    	<td>
+        {check_admin}
+            {general_info}
+	<div id="openrealty_links">
+<fieldset><legend title="Open Realty UK">Open <span class="realty">Realty</span> UK</legend>
+<ul>
+<li><a href="http://www.open-realty.co.uk/">Open Realty UK</a></li>
+<li><a href="http://www.open-realty.co.uk/templates/">Commercial Templates</a></li>
+<li><a href="http://www.open-realty.co.uk/addons/">Commercial Addons</a></li>
+<li><a href="http://www.open-realty.co.uk/design/">Design Service</a></li>
+
+<!-- <li class="upgrade_false">-</li> -->
+</ul>
+</fieldset></div>
+
+            {openrealty_links}
+        {/check_admin}
+		</td>
+        <td>
+        <div class="quicklinks">
+        	<fieldset>
+            	<legend>Quick Links</legend>
+                <ul>
+                	<li class="addlisting"><a href="{baseurl}/admin/index.php?action=add_listing_property_class" title="{lang_admin_add_listing}">{lang_admin_add_listing}</a></li>
+                    <li class="editaccount"><a href="{baseurl}/admin/index.php?action=user_manager&amp;edit={user_id}" title="{lang_admin_edit_my_account}">{lang_admin_edit_my_account}</a></li>
+                    <li class="editmylistings"><a href="{baseurl}/admin/index.php?action=edit_my_listings" title="{lang_admin_edit_my_listings}">{lang_admin_edit_my_listings}</a></li>
+                    {check_access_blog_manager}
+                    <li class="blogmanager"><a href="{baseurl}/admin/index.php?action=edit_blog" title="{lang_admin_blog_manager}">{lang_admin_blog_manager}</a></li>
+					{/check_access_blog_manager}
+                    {check_edit_pages}
+					<li class="pageeditor"><a href="{baseurl}/admin/index.php?action=edit_page" title="{lang_admin_page_editor_caption}">{lang_admin_page_editor_caption}</a></li>
+					{/check_edit_pages}
+                    <li class="viewfavorites"><a href="{url_view_favorites}" title="{lang_admin_favorites}">{lang_admin_favorites}</a></li>
+                    <li class="viewsavedsearches"><a href="{url_view_saved_searches}" title="{lang_admin_saved_search}">{lang_admin_saved_search}</a></li>
+                </ul>
+            </fieldset>
+        </div>
+        <table class="addonscontainer">
+			{addon_links}
+		</table>
+        </td>
+	</tr>
+</table>

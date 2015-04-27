@@ -1,0 +1,53 @@
+{listing_dataset}
+<table class="edit_listings result_row_{row_num_even_odd}" cellpadding="0" cellspacing="0">
+	<tr class="listingheader">
+		<th colspan="2"><span class="listingtitle">{listing_title}</span> <span class="listingid">({listingid})</span></th>
+		<th class="listingactions">
+			<a href="{edit_listing_link}"><img src="images/no_lang/listing_editor_edit.png" alt="{lang_admin_listings_editor_modify_listing}" width="16" height="16" /></a>
+			<a href="{delete_listing_link}" onclick="return confirmDelete()"><img src="images/no_lang/listing_editor_delete.png" alt="{lang_admin_listings_editor_delete_listing}" width="16" height="16" /></a>
+		</th>
+	</tr>
+	<tr>
+		<td rowspan="2" width="125" class="listingsimage">
+			<a href="{edit_listing_link}"><img src="{raw_image_thumb_1}" alt="{lang_admin_listings_editor_modify_listing}" /></a>
+		</td>
+        <td>
+            <div class="listingagent">
+                <span class="label">{lang_listing_editor_agent}:</span>
+                <span class="value"><a href="{email_agent_link}">{listing_agent_last_name}, {listing_agent_first_name}</a></span>
+            </div>
+            <div class="listingclass">
+                <span class="label">{lang_admin_listings_editor_property_class}</span>
+                <span class="value">{listing_pclass}</span>
+            </div>
+        </td>
+        <td class="listinginfo">
+        	<div class="listingstatus">
+                <span class="label">{lang_admin_listings_active}:</span>
+                <span class="value">{listing_active_status}</span>
+            </div>
+            <div class="listingfeatured">
+        		<span class="label">{lang_admin_listings_editor_featured}:</span>
+                <span class="value">{listing_featured_status}</span>
+            </div>
+            <div class="listinghits">
+        		<span class="label">{lang_admin_listings_editor_hit_count}:</span>
+                <span class="value">{listing_hit_count}</span>
+            </div>
+        	{show_expiration_block}
+            <div class="listinghits">
+        		<span class="label">{lang_listing_editor_expiration}:</span>
+                <span class="value">{listing_expiration}</span>
+            </div>
+            {/show_expiration_block}
+        </td>
+    </tr>
+    <tr>
+		<td colspan="2">
+        	<div class="listingnotes">
+        		{listing_notes}
+            </div>
+        </td>
+	</tr>
+</table>
+{/listing_dataset}

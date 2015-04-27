@@ -1,0 +1,29 @@
+# SEARCH ENINGE FRIENDLY URLS FOR OR 2.5+
+<IfModule mod_php4.c>
+php_value session.use_trans_sid 0
+</IfModule>
+RewriteEngine On
+Rewriterule ^index.html index.php
+RewriteRule ^listing-(.*)-([0-9]*).html index.php?action=listingview&listingID=$2 [L]
+RewriteRule ^page-(.*)-([0-9]*).html index.php?action=page_display&PageID=$2 [L]
+RewriteRule ^search.html index.php?action=searchpage [L]
+RewriteRule ^searchresults.html index.php?action=searchresults [L]
+RewriteRule ^agents.html index.php?action=view_users [L]
+RewriteRule ^view_favorites.html index.php?action=view_favorites [L]
+RewriteRule ^calculator.html index.php?action=calculator&popup=yes [L]
+RewriteRule ^saved_searches.html index.php?action=view_saved_searches [L]
+RewriteRule ^listing_image_([0-9]*).html index.php?action=view_listing_image&image_id=$1 [L]
+RewriteRule ^logout.html index.php?action=logout [L]
+RewriteRule ^member_signup.html index.php?action=signup&type=member [L]
+RewriteRule ^agent_signup.html index.php?action=signup&type=agent [L]
+RewriteRule ^member_login.html index.php?action=member_login [L]
+RewriteRule ^edit_profile_([0-9]*).html index.php?action=edit_profile&user_id=$1 [L]
+RewriteRule ^agent-(.*)-([0-9]*).html index.php?action=view_user&user=$2 [L]
+RewriteRule ^contact-agent-(.*)-([0-9]*).html index.php?action=contact_agent&popup=yes&listing_id=$2 [L]
+RewriteRule ^(.*)-searchresults-([0-9]*).html index.php?action=searchresults&pclass[]=$2 [L]
+RewriteRule ^(.*)-search-([0-9]*).html index.php?action=search_step_2&pclass[]=$2 [L]
+RewriteRule ^article-(.*)-([0-9]*).html index.php?action=blog_view_article&ArticleID=$2 [L]
+RewriteRule ^blog.html index.php?action=blog_index
+
+#Set Error pages
+ErrorDocument 500 /500.shtml

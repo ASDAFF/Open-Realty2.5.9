@@ -1,0 +1,96 @@
+/*	Desc: *design for open-realty* 
+    Screen Style Sheet: *screen.css*
+	Author: *open-realty*
+	Date: *27-Oct-2007*
+	+ Colours
+	- *colour hex* *colour name* (*purpose*)
+
+Colours	+ CV
+		- #4a4339 light brown (bg)
+		- #fa0 ornage (links)
+		- #fff white (text)
+
+		+ PORTFOLIO
+		- #000 black (bg)
+		- #f0a magenta (links)
+		- #fff white (text)
+
+
+=== === === === === === === === === === */
+
+
+
+/* END CSS RESET FOR MAIN CONTENT */
+
+/*=STRUCTURE
+=== === === === === === === === === === */
+
+/* css for tabbed pages */
+.dynamic-tab-pane-control.tab-pane {
+	position:	relative;
+	width:		100%;		/* width needed weird IE bug */
+	margin-right:	-2px;	/* to make room for the shadow */
+}
+.dynamic-tab-pane-control .tab-row .tab {
+	width:				70px;
+	height:				16px;
+	background-image:	url( "{template_url}/images/tab.png" );
+	position:		relative;
+	top:			0;
+	display:		inline;
+	float:			left;
+	overflow:		hidden;
+	cursor:			Default;
+	margin:			1px -1px 1px 2px;
+	padding:		2px 0px 0px 0px;
+	border:			0;
+	z-index:		1;
+	font:			11px Tahoma;
+	white-space:	nowrap;
+	text-align:		center;
+}
+.dynamic-tab-pane-control .tab-row .tab.selected {
+	width:				74px !important;
+	height:				18px !important;
+	background-image:	url( "{template_url}/images/tab.active.png" ) !important;
+	background-repeat:	no-repeat;
+	border-bottom-width:	0;
+	z-index:		3;
+	padding:		2px 0 0px 0;
+	margin:			1px -3px -3px 0px;
+	top:			-2px;
+	font:				11px Tahoma;
+}
+.dynamic-tab-pane-control .tab-row .tab a {
+	font:				11px Tahoma;
+	color:				Black;
+	text-decoration:	none;
+	cursor:				default;
+}
+.dynamic-tab-pane-control .tab-row .tab.hover {
+	font:				11px Tahoma;
+	width:				70px;
+	height:				16px;
+	background-image:	url( "{template_url}/images/tab.hover.png" );
+	background-repeat:	no-repeat;
+}
+.dynamic-tab-pane-control .tab-page {
+	clear:			both;
+	border:			1px solid rgb( 145, 155, 156 );
+	background:		#ffffff;
+	z-index:		2;
+	position:		relative;
+	top:			-2px;
+	font:				11px Tahoma;
+	color:				Black;
+	filter:			progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#fffcfcfe, EndColorStr=#fff4f3ee, GradientType=0)
+					progid:DXImageTransform.Microsoft.Shadow(Color=#ff919899, Strength=2, Direction=135);
+	/*244, 243, 238*/
+	/* 145, 155, 156*/
+
+	padding:		10px;
+}
+.dynamic-tab-pane-control .tab-row {
+	z-index:		1;
+	white-space:	nowrap;
+}

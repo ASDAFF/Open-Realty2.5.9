@@ -1,0 +1,70 @@
+{next_prev}
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" bgcolor="#EEEEEE" class="listing_header">
+	<h3>{listing_title}</h3>
+	{show_listed_by_admin_block}<h4>{lang_listed_by} <a href="{listing_agent_link}">{listing_agent_first_name} {listing_agent_last_name}</a></h4>
+	{/show_listed_by_admin_block}
+	<h4>{headline}</h4></td>
+    <td align="left" bgcolor="#EEEEEE" class="listing_header">{lang_this_listing_has_been_viewed} <b>{hitcount}</b> {lang_times}</td>
+  </tr>
+  <tr>
+    <td height="8" bgcolor="#EEEEEE"></td>
+    <td align="left" valign="top" bgcolor="#EEEEEE">{vtour_button}</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#EEEEEE">{main_image_java}</td>
+    <td rowspan="2" align="center" valign="top" bgcolor="#EEEEEE" style="width: 130px;">{listing_images_java_caption}</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="listing_result_top">
+      
+      <tr>
+        <td align="left" valign="top">{top_left}</td>
+        <td align="left" valign="top">{top_right}</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="left" valign="top">{center}</td>
+        </tr>
+      <tr>
+        <td align="left" valign="top">{feature1}</td>
+        <td align="left" valign="top">{feature2}</td>
+      </tr>
+    </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="listing_result_center">
+        <tr>
+          <td align="left" valign="top">{hide_printer_friendly}
+            <h3><strong>{lang_tools}</strong></h3>
+{link_calc}<br />
+{check_member}{link_add_favorites}<br />
+{/check_member}
+		{link_printer_friendly}<br />
+{link_email_friend} </td>
+          <td align="left" valign="top"><strong>
+            <h3>{lang_neighborhood_links}</h3></strong>
+{link_map}<br />
+{link_yahoo_school}<br />
+{link_yahoo_neighborhood}<br />
+{/hide_printer_friendly} </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      
+      <tr>
+        <td align="left" valign="top">{bottom_left}</td>
+        <td align="left" valign="top">{bottom_right}</td>
+      </tr>
+      
+      <tr>
+        <td colspan="2" align="left" valign="top" class="listing_result_bottom">
+		<h3>Agent Info</h3>
+		{show_listed_by_admin_block}{lang_listed_by}: <a href="{listing_agent_link}">{listing_agent_first_name} {listing_agent_last_name}</a> | {contact_agent_link}
+		<br />{/show_listed_by_admin_block}
+		{listing_agent_field_phone_block}{listing_agent_field_phone}{/listing_agent_field_phone_block} | {listing_agent_field_mobile_block}{listing_agent_field_mobile}{/listing_agent_field_mobile_block} | {listing_agent_field_fax_block}{listing_agent_field_fax}<br />{/listing_agent_field_fax_block}
+		{listing_agent_field_homepage_block}{listing_agent_field_homepage}<br />{/listing_agent_field_homepage_block}
+		{listing_agent_field_info_block}{listing_agent_field_info}<br />{/listing_agent_field_info_block}		</td>
+        </tr>
+    </table></td>
+  </tr>
+</table>

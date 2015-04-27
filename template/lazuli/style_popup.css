@@ -1,0 +1,124 @@
+
+html {
+	margin:0;
+	padding:0;
+	}
+
+body {
+	margin:0; padding:0;
+	font:12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align:left;
+	color:#000000;
+	background:#FFFFFF url(images/body_backg.png) repeat;
+	}
+
+/* POPUP CONTACT AGENT
+*******************************************************************************/
+
+#popup {
+	padding-top:20px;
+	}
+
+td.TitleColor {
+	width:100%;
+	}
+td.TitleColor label {
+	float:left;
+	width:100px !important;
+	}
+td.TitleColor input {
+	float:right;
+	width:345px;
+	}
+td.TitleColor textarea {
+	width:465px;
+	background-color:#FFFFFF;
+	}
+
+/* CALCULATOR
+*******************************************************************************/
+table.page_display {
+	border-collapse:collapse;
+	}
+td.page_display {
+	margin:0;
+	padding:0 5px 0 5px;
+	border-collapse:collapse;
+	border:0 none;
+	font-size:12px;
+	}
+td.page_display p {
+	margin:0;
+	padding:5px;
+	line-height:18px;
+	font-size:12px;
+	text-align:left !important;
+	}
+td.page_display table {
+	width:100%;
+	border-collapse:collapse;
+	}
+td.page_display td {
+	margin:0;
+	padding:0;
+	border-collapse:collapse;
+	border:0 none;
+	font-size:12px;
+	}
+td.page_display td h1 {
+	margin:0;
+	padding:20px 0 5px 0;
+	line-height:20px;
+	font-size:14px;
+	}
+td.page_display td h2 {
+	margin:0;
+	padding:5px 0 30px 0;
+	line-height:22px;
+	font-size:16px;
+	}
+td.page_display td a:link,
+td.page_display td a:visited {
+	padding:5px 7px 0 7px;
+	border:1px solid #CFCFCF;
+	font:12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	color:#FF0000;
+	background-color:#FFFFFF;
+	}
+td.page_display td a:hover {
+	font:12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+	}
+td.page_display td p {
+	margin:0;
+	padding:0;
+	line-height:18px;
+	font-size:12px;
+	text-align:left !important;
+	}
+td.page_display td table {
+	width:100%;
+	border-collapse:collapse;
+	}
+td.page_display td td {
+	margin:0;
+	padding:0;
+	border-collapse:collapse;
+	border:0 none;
+	font-size:12px;
+	text-align:left;
+	}
+td.page_display td td input {
+	font-size:11px;
+	}
+td.page_display td td select {
+	font-size:11px;
+	}
+td.page_display td td option {
+	font-size:11px;
+	}
+

@@ -1,0 +1,18 @@
+<!-- bof "notify_listing_horizontal.html" -->
+<div style="clear:both;"></div>
+<div style="font-size:12px;width:600px;">
+	{lang_notify_listings}
+	<hr style="margin:10px 0px 10px 0px;"/>
+	{notify_listing_block_row repeat="3"}
+	{notify_listing_block}
+	<div style="width:190px;float:left;margin:5px;">
+		<a href="{notify_url}" title="">{notify_img_block}<img style="border:0px;" src="{notify_thumb_src}" height="{notify_thumb_height}" width="{notify_thumb_width}" alt="{lang_click_to_learn_more}" />{/notify_img_block}</a><br />
+		<a href="{notify_url}" title="">{listing_title}</a>
+	</div>
+	{/notify_listing_block}
+	{/notify_listing_block_row}
+</div>
+<div style="clear:both;"></div>
+<br />
+<span style="font-size:9px;font-style: italics">{lang_notify_unsubscribe_text} <a href="{url_view_saved_searches}" title="{lang_notify_saved_search_link}">{lang_notify_saved_search_link}</a></span>
+<!-- eof "notify_listing_horizontal.html" -->

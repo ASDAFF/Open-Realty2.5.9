@@ -1,0 +1,47 @@
+{vtour_header_block}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Virtual Tour</title>
+{load_meta_description}
+{load_meta_keywords}
+<meta http-equiv="Content-Type" content="text/html;charset={charset}" />
+<meta name="robots" content="index,follow" />
+<meta name="Generator" content="Open-Realty" />
+<link rel="shortcut icon" href="{template_url}/images/favicon.ico" />
+<link href="{template_url}/style_vtour.css" rel="stylesheet" type="text/css" />
+{load_js}
+{license_tag}
+</head>
+<body {onload}>
+{/vtour_header_block}
+<!-- bof "vtour_classic.html" -->
+<div style="text-align: center;">
+	<table width="100%">
+	<tr>
+		<td align="center">
+			<table style="width:335px; height:100px; background-image:url({template_url}/images/vtour_background.gif); background-repeat:repeat-y" >
+			<tr>
+				<td align="center">
+					{vtour}
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					{vtour_left_button}{vtour_pause_button}{vtour_right_button}{vtour_zoomin_button}{vtour_zoomout_button}<br /><br />
+					{vtour_select}<br />
+					{vtour_description}<br />
+				</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+</div>
+<!-- eof "vtour_classic.html" -->
+{vtour_footer_block}
+{load_js_last}
+</body>
+</html>
+{/vtour_footer_block}

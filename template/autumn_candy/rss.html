@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>{rss_title}</title>
+	<link>{rss_webroot}</link>
+	<description><![CDATA[{rss_description}]]></description>
+	<generator><![CDATA[Open-Realty&reg;]]></generator>
+	{rss_listing_block}
+	<item>
+		<title>{rss_listing_title}</title>
+		<link>{fulllink_to_listing}</link>
+		<guid isPermaLink="false">{rss_listing_guid}</guid>
+		<pubDate>{listing_modified_date}</pubDate>
+		<description><![CDATA[{rss_listing_description}]]></description>
+	</item>
+	{/rss_listing_block}
+</channel>
+</rss>

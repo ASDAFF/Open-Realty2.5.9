@@ -1,0 +1,48 @@
+<!-- NEW NEXT-PREV TEMPLATE START -->
+<table class="blog_next_prev_table" border="0" cellspacing="1" cellpadding="0">
+	<tr>
+		<td align="left" colspan="2">
+			<table cellpadding="0" cellspacing="1" border="0">
+				<tr>
+					<td style="height:20px;" class="blog_next_prev_viewing" align="right" >{lang_viewing} <span class="browse_tool_num"><strong>&nbsp;&nbsp;{nextprev_listing_num_min} - {nextprev_listing_num_max}&nbsp;&nbsp;</strong></span></td>
+		{nextprev_is_firstpage_block}
+					<td class="blog_next_prev_ghost">
+						<span class="blog_next_prev_ghost">&nbsp;&nbsp;&lt;&lt;&nbsp;&nbsp;</span>
+					</td>
+		{/nextprev_is_firstpage_block}
+
+		{!nextprev_is_firstpage_block}
+					<td class="blog_next_prev_pages">
+						<a href="index.php?cur_page={nextprev_prevpage}{nextprev_guidestring}" class="blog_next_prev_pages">&nbsp;&nbsp;&lt;&lt;&nbsp;&nbsp;</a>
+					</td>
+		{/!nextprev_is_firstpage_block}
+		<!-- begin 10 page menu selection -->
+		{nextprev_page_section}
+			{nextprev_page_current_block}
+					<td class ="blog_next_prev_curpage" >
+						<b>{nextprev_disp_count}</b>
+					</td>
+			{/nextprev_page_current_block}
+			{nextprev_page_other_block}
+					<td class="blog_next_prev_pages" >
+						<a href="index.php?cur_page={nextprev_count}{nextprev_guidestring}" class="blog_next_prev_pages"><b>{nextprev_disp_count}</b></a>
+					</td>
+			{/nextprev_page_other_block}
+		{/nextprev_page_section}
+		{nextprev_lastpage_block}
+					<td class="blog_next_prev_ghost" >
+						<span class="blog_next_prev_ghost">&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;</span>
+					</td>
+		{/nextprev_lastpage_block}
+		{!nextprev_lastpage_block}
+					<td class="blog_next_prev_pages" >
+						<a href="index.php?cur_page={nextprev_nextpage}{nextprev_guidestring}" class="blog_next_prev_pages">&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;</a>
+					</td>
+		{/!nextprev_lastpage_block}
+				</tr>
+			</table>
+		</td>
+		
+	</tr>
+</table>
+<!-- NEW NEXT-PREV TEMPLATE END -->

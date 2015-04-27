@@ -1,0 +1,50 @@
+<h2>Blog Manager</h2>
+<div class="blog_edit_index_status_list"> 
+	<a href="{baseurl}/admin/index.php?action=edit_blog">{lang_blog_all}</a> <span class="blog_edit_index_status_list_count">({blog_edit_status_all_count})</span> |
+ 	<a href="{baseurl}/admin/index.php?action=edit_blog&amp;status=Published">{lang_blog_published}</a> <span class="blog_edit_index_status_list_count">({blog_edit_status_published_count})</span> |
+	<a href="{baseurl}/admin/index.php?action=edit_blog&amp;status=Draft">{lang_blog_draft}</a> <span class="blog_edit_index_status_list_count">({blog_edit_status_draft_count})</span>
+	<a href="{baseurl}/admin/index.php?action=edit_blog&amp;status=Review">{lang_blog_review}</a> <span class="blog_edit_index_status_list_count">({blog_edit_status_review_count})</span>
+</div>
+<div class="blog_edit_index_next_prev">
+	{next_prev}
+</div>
+<table cellspacing="0" class="blog_edit_index_table">
+	<thead>
+        <tr>
+            <th>{lang_blog_post}</th>
+            <th>{lang_blog_author}</th>
+            <th>{lang_blog_keywords}</th>
+            <th>{lang_blog_comments}</th>
+            <th>{lang_blog_date}</th>
+            <th>{lang_blog_publication_status}</th>
+        </tr>
+	</thead>
+	<tfoot>
+        <tr>
+            <th>{lang_blog_post}</th>
+            <th>{lang_blog_author}</th>
+            <th>{lang_blog_keywords}</th>
+            <th>{lang_blog_comments}</th>
+            <th>{lang_blog_date}</th>
+            <th>{lang_blog_publication_status}</th>
+        </tr>
+	</tfoot>
+	<tbody>
+	{blog_edit_item_block}
+	<tr>
+		<td><a href="{baseurl}/admin/index.php?action=edit_blog_post&amp;id={blog_edit_item_id}">{blog_edit_item_title}</a></td>
+		<td>{blog_edit_item_author}</td>
+		<td>{blog_edit_item_keywords}</td>
+		<td><a href="{baseurl}/admin/index.php?action=edit_blog_post_comments&amp;id={blog_edit_item_id}">{blog_edit_item_commentcount}</a></td>
+		<td>{blog_edit_item_date}</td>
+		<td class="blog_publish_status_{blog_edit_item_published}">{blog_edit_item_published}</td>
+	</tr>
+	{/blog_edit_item_block}
+	</tbody>
+</table>
+<div class="addpost">
+	<form class="add_blog_form" action="index.php" method="get">
+        <input type="submit" value="Add Post" />
+        <input type="hidden" name="action" value="add_blog" />
+	</form>
+</div>

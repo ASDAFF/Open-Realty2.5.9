@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+<head>
+    <meta http-equiv="content-type" content="text/html;charset={charset}" />
+    <title>{site_title}</title>
+    {load_css_style}
+    {license_tag}
+    {load_js}
+    {load_js_body}
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo"><a href="{baseurl}/admin/index.php" title="{site_title} {lang_index_admin}"><img src="{template_url}/images/title.jpg" alt="{site_title} {lang_index_admin}" /></a></div><!-- END: logo -->
+        <div class="headerlinks">
+            <ul>
+                <li class="homelink"><a href="{baseurl}/index.php" title="{lang_index_home}">{lang_index_home}</a></li>
+                <li class="adminlink"><a href="{baseurl}/admin/index.php" title="{lang_index_admin}">{lang_index_admin}</a></li>
+                {check_agent}
+                <li class="homelink">{help_link}</li>
+                <li class="logoutlink"><a href="{baseurl}/admin/index.php?action=log_out" title="{lang_index_logout}">{lang_index_logout}</a></li>
+                {/check_agent}
+            </ul>   
+        </div><!-- END: headerlinks -->
+        <div class="poweredby"><a href="{baseurl}/admin/index.php" title="{site_title} {lang_index_admin}"><img src="{template_url}/images/logo.gif" alt="{site_title} {lang_index_admin}" /></a></div><!-- END: poweredby -->
+        <div class="version">{check_agent}{version}{/check_agent}</div><!-- END: version -->
+        <div class="company">
+        	<span class="companyname">{company_name}</span>
+        	<span class="companylocation">{company_location}</span>
+        </div><!-- END: company -->
+    </div><!-- END: header -->
+    <div class="main">
+    	<div class="center">
+    		<div class="content">
+            	<div class="contentpadding">{content}</div><!-- END: contentpadding -->
+            </div><!-- END: content -->
+        </div><!-- END: center -->
+    	<div class="leftcolumn">
+        	{check_member}
+        	<div class="useractions">
+            	<ul>
+                	<li class="editaccount"><a href="{baseurl}/admin/index.php?action=user_manager&amp;edit={user_id}" title="{lang_admin_edit_my_account}">{lang_admin_edit_my_account}</a></li>
+                    <li class="editmylistings"><a href="{baseurl}/admin/index.php?action=edit_my_listings" title="{lang_admin_edit_my_listings}">{lang_admin_edit_my_listings}</a></li>
+                </ul>
+            </div><!-- END: useractions -->
+            <div class="siteactions">
+            	<ul>
+                	<li class="addlisting"><a href="{baseurl}/admin/index.php?action=add_listing_property_class" title="{lang_admin_add_listing}">{lang_admin_add_listing}</a></li>
+                    {check_edit_all_listings}
+                    <li class="editalllistings"><a href="{baseurl}/admin/index.php?action=edit_listings" title="{lang_admin_edit_all_listings}">{lang_admin_edit_all_listings}</a></li>
+                    {/check_edit_all_listings}
+                </ul>
+            </div><!-- END: siteactions -->
+            <div class="sitecontent">
+            	<ul>
+                	{check_edit_pages}
+					<li class="pageeditor"><a href="{baseurl}/admin/index.php?action=edit_page" title="{lang_admin_page_editor_caption}">{lang_admin_page_editor_caption}</a></li>
+					{/check_edit_pages}
+                    {check_access_blog_manager}
+                    <li class="blogmanager"><a href="{baseurl}/admin/index.php?action=edit_blog" title="{lang_admin_blog_manager}">{lang_admin_blog_manager}</a></li>
+					{/check_access_blog_manager}
+                </ul>
+            </div><!-- END: sitecontent -->
+            <div class="sitesetup">
+            	<ul>
+                	{check_edit_listing_classes}
+                	<li class="editlistingclasses"><a href="{baseurl}/admin/index.php?action=show_property_classes" title="{lang_admin_property_classes}">{lang_admin_property_classes}</a></li>
+                    {/check_edit_listing_classes}
+                    {check_edit_listing_template}
+					<li class="editlistingtemplate"><a href="{baseurl}/admin/index.php?action=edit_listing_template" title="{lang_admin_edit_listing_template}">{lang_admin_edit_listing_template}</a></li>
+					{/check_edit_listing_template}
+                    {check_edit_agent_template}
+					<li class="editagenttemplate"><a href="{baseurl}/admin/index.php?action=edit_user_template&amp;type=agent" title="{lang_admin_edit_agent_template}">{lang_admin_edit_agent_template}</a></li>
+					{/check_edit_agent_template}
+					{check_edit_member_template}
+                    <li class="editmembertemplate"><a href="{baseurl}/admin/index.php?action=edit_user_template&amp;type=member" title="{lang_admin_edit_member_template}">{lang_admin_edit_member_template}</a></li>
+					{/check_edit_member_template}
+                </ul>
+            </div><!-- END: sitesetup -->
+            <div class="siteadministration">
+            	<ul>
+                	{check_edit_site_config}
+                	<li class="siteconfig"><a href="{baseurl}/admin/index.php?action=configure" title="{lang_admin_site_config}">{lang_admin_site_config}</a></li>
+                    {/check_edit_site_config}
+                    {check_edit_all_users}
+					<li class="usermanager"><a href="{baseurl}/admin/index.php?action=user_manager" title="{lang_admin_user_manager}">{lang_admin_user_manager}</a></li>
+					{/check_edit_all_users}
+                    {check_view_logs}
+					<li class="sitelog"><a href="{baseurl}/admin/index.php?action=view_log" title="{lang_admin_view_log}">{lang_admin_view_log}</a></li>
+					{/check_view_logs}
+                    {check_addon_manager}
+            		<li class="addonmanager"><a href="{baseurl}/admin/index.php?action=addon_manager" title="{lang_admin_addon_manager}">{lang_admin_addon_manager}</a></li>
+					{/check_addon_manager}
+                </ul>
+            </div><!-- END: siteadministration -->
+            {/check_member}          
+		</div><!-- END: leftcolumn -->
+    </div><!-- END: main -->
+    <div class="footer">
+        <div class="copyright">
+            <a href="http://www.open-realty.org" title="Open-Realty is released under the Open-Realty License">Open-Realty</a> is released under the Open-Realty License by <a href="http://www.transparent-tech.com" title="Transparent Technologies">Transparent Technologies</a>
+        </div><!-- END: copyright -->
+        <div class="version">{check_agent}{version}{/check_agent}</div><!-- END: version -->
+    </div><!-- END: footer -->
+</div><!-- END: container -->
+</body>
+{load_js_last}
+</html>

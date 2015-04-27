@@ -1,0 +1,67 @@
+
+<!-- bof "next_prev_bottom.html" -->
+<table class="browse_tool_table" border="0" cellspacing="1" cellpadding="0">
+<tr>
+	<td align="left" colspan="2">
+		<table cellpadding="0" cellspacing="1" border="0">
+		<tr>
+			<td style="height:20px;" class="browse_tool" align="right">{lang_jump_to_page}</td>
+{nextprev_is_firstpage_block}
+			<td class="bt_pages_ghost"><span class="bt_pages_ghost">&nbsp;&nbsp;&lt;&lt;&nbsp;&nbsp;</span></td>
+{/nextprev_is_firstpage_block}
+{!nextprev_is_firstpage_block}
+			<td class="bt_pages"><a href="index.php?cur_page={nextprev_prevpage}{nextprev_guidestring}" class="bt_pages" title="">&nbsp;&nbsp;&lt;&lt;&nbsp;&nbsp;</a></td>
+{/!nextprev_is_firstpage_block}
+<!-- begin 10 page menu selection -->
+{nextprev_page_section}
+{nextprev_page_current_block}
+			<td class ="browse_tool_curpage"><strong>{nextprev_disp_count}</strong></td>
+{/nextprev_page_current_block}
+{nextprev_page_other_block}
+			<td class="bt_pages"><a href="index.php?cur_page={nextprev_count}{nextprev_guidestring}" class="bt_pages" title=""><strong>{nextprev_disp_count}</strong></a></td>
+{/nextprev_page_other_block}
+{/nextprev_page_section}
+{nextprev_lastpage_block}
+			<td class="bt_pages_ghost"><span class="bt_pages_ghost">&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;</span></td>
+{/nextprev_lastpage_block}
+{!nextprev_lastpage_block}
+			<td class="bt_pages"><a href="index.php?cur_page={nextprev_nextpage}{nextprev_guidestring}" class="bt_pages" title="">&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;</a></td>
+{/!nextprev_lastpage_block}
+		</tr>
+		</table>
+	</td>
+	<!-- Search Buttons -->
+	<td align="center">
+		<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td class="browse_tool_button">
+{nextprev_prev_100_button_block}
+				<strong><a href="index.php?cur_page={nextprev_prev10page}{nextprev_guidestring}" title="{lang_previous_100}">{lang_previous_100}</a></strong>
+{/nextprev_prev_100_button_block}
+{!nextprev_prev_100_button_block}
+				<span class="browse_tool_ghost">{lang_previous_100}</span>
+{/!nextprev_prev_100_button_block}
+			</td>
+		</tr>
+		</table>
+	</td>
+	<td align="center">
+		<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td class="browse_tool_button">
+{nextprev_next_100_button_block}
+				<strong><a href="index.php?cur_page={nextprev_next10page}{nextprev_guidestring}" title="{lang_next_100}">{lang_next_100}</a></strong>
+{/nextprev_next_100_button_block}
+{!nextprev_next_100_button_block}
+				<span class="browse_tool_ghost">{lang_next_100}</span>
+{/!nextprev_next_100_button_block}
+			</td>
+		</tr>
+		</table>
+	</td>
+{nextprev_clearlog_block}
+	<td><div style="text-align:center;"><a href="index.php?action=clear_log" onclick="return confirmDelete()" title="{lang_clear_log}"><img src="images/no_lang/clear_log.gif" style="border:none;" alt="" /><br />{lang_clear_log}</a></div></td>
+{/nextprev_clearlog_block}
+</tr>
+</table>
+<!-- eof "next_prev_bottom.html" -->

@@ -1,0 +1,12 @@
+
+/*
+ TO ALLOW THE USE OF TEMPLATE TAGS AT A STYLESHEET, THE STYLESHEET NEED TO BE
+ LOADED INTO SOURCE CODE OF THE MAIN TEMPLATE FILE
+============================================================================= */
+#logo {
+	width:300px;
+	height:80px;
+	padding:0 0 0 20px;
+	text-align:left;
+	background:url({template_url}/images/{company_logo}) 20px 20px no-repeat;
+	}

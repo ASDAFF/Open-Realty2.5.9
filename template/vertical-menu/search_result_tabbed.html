@@ -1,0 +1,85 @@
+{tabbed_js}
+{next_prev}
+{search_result_header}
+	<table style="margin-left:auto; margin-right:auto; text-align: center;">
+		<tr>
+			<td>
+				<strong>Sort Listings By: {header_5} : {header_6} : {header_7} : {header_1}</strong>
+			</td>
+		</tr>
+	</table>
+{/search_result_header}
+
+{search_result_dataset}
+<br />
+<div style="background:#ffffff;" class="tab-pane" id="tabPane{listingid}">
+<script type="text/javascript">
+tp{listingid} = new WebFXTabPane( document.getElementById( "tabPane{listingid}" ) );
+//tp{listingid}.setClassNameTag( "dynamic-tab-pane-control-luna" );
+//alert( 0 )
+</script>
+<div class="tab-page" id="tabPage{listingid}-1">
+<h2 class="tab">Details</h2>
+<script type="text/javascript">tp{listingid}.addTabPage( document.getElementById( "tabPage{listingid}-1" ) );</script>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse: collapse;">
+	<tr>
+		<td>
+			<table border="0" cellspacing="0" cellpadding="3" width="100%">
+				<tr>
+					<td align="left" valign="top">
+						<strong><a href="{link_to_listing}">{field_2}</a></strong>
+						<br />
+						{field_1}, {field_4} {field_3}
+					</td>
+					<td align="right" valign="top">
+						<strong>{field_5}</strong>
+						<br />
+						{field_6} beds, {field_7} baths<br />{field_10}
+						<br />{delete_from_favorite}
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+<div class="tab-page" id="tabPage{listingid}-2">
+		<h2 class="tab">Images</h2>
+		<script type="text/javascript">tp{listingid}.addTabPage( document.getElementById( "tabPage{listingid}-2" ) );</script>
+			<table width="100%" border="0">
+				<tr>
+					<td>
+						<a href="{link_to_listing}">{image_thumb_1}</a> <a href="{link_to_listing}">{image_thumb_2}</a> <a href="{link_to_listing}">{image_thumb_3}</a> <a href="{link_to_listing}">{image_thumb_4}</a> 
+					</td>
+				</tr>
+			</table>
+	</div>
+<div class="tab-page" id="tabPage{listingid}-3">
+		<h2 class="tab">Description</h2>
+		<script type="text/javascript">tp{listingid}.addTabPage( document.getElementById( "tabPage{listingid}-3" ) );</script>
+			<table width="100%" border="0">
+				<tr>
+					<td align="left" colspan="3">
+						{textarea_1}<br />
+						<a href="{link_to_listing}">View Listing</a>
+					</td>
+				</tr>
+			</table>
+	</div>
+
+
+
+
+
+
+
+
+
+				
+
+
+
+</div>
+<br />
+{/search_result_dataset}
+{next_prev_bottom}

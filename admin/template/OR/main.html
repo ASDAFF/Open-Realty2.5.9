@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+ 	<head>
+ 		<meta http-equiv="content-type" content="text/html;charset={charset}" />
+		<title>{site_title}</title>
+		{load_css_style}
+		{license_tag}
+		{load_js}
+		{load_js_body}
+	</head>
+	<body>
+		<table style="margin-left:auto; margin-right:auto;" width="735" border="0" cellpadding="0">
+			<tr>
+ 				<td style="width:480px; height:112px;"><img src="{baseurl}/admin/images/logo.gif" alt="logo" /></td>
+				<td>
+					<div style="font-family:'Times New Roman', Times, serif; font-size:9px; width:250px;height:90px; text-align:right; "><a href="http://www.open-realty.org">Open-Realty</a> is released under the Open-Realty License<br />by <a href="http://www.transparent-tech.com" >Transparent Technologies</a></div>
+					<div style="font-family: Arial, Helvetica, sans-serif; font-size:12px; width:250px; text-align:right; font-weight:bold">{check_agent}{version}{/check_agent}</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div  style="height:15px;width:750px; border-width: 1px 0px 0px 0px; border-style:solid; padding-top:2px; padding-bottom:2px;margin-bottom:10px; font-family: Arial, Helvetica, sans-serif; font-size:8px;"><a href="{baseurl}/index.php">{lang_index_home}</a> | <a href="{baseurl}/admin/index.php">{lang_index_admin}</a>{check_agent} | <a href="{baseurl}/admin/index.php?action=log_out">{lang_index_logout}</a> | {help_link}{/check_agent}</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" valign="top">
+					{content}
+				</td>
+			</tr>
+		</table>
+	</body>
+{load_js_last}
+</html>

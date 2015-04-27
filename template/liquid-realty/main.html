@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset={charset}" />
+<meta name="keywords" content="{load_meta_keywords_raw}" />
+<meta name="description" content="{load_meta_description_raw}" />
+{load_css_style}
+{load_css_editor}
+<title>{site_title}</title>
+{load_js}
+{license_tag}
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_lastmodified_link_title}" href="index.php?action=rss_lastmodified_listings" />
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_featured_link_title}" href="index.php?action=rss_featured_listings" />
+</head>
+<body>
+<!-- LOGO -->
+<div id="company-name">{company_name}</div>
+<!-- END EDIT -->
+<div id="rss">
+	{check_guest}
+	<a href="{url_member_signup}" title="Member Signup">Member Signup</a> <a href="{url_member_login}" title="Member Login">Member Login</a>
+	{/check_guest}
+</div>
+<ul id="nav">
+	<li><a href="{url_index}" title="Home Page ">Home Page</a></li>
+	<li><a href="{page_link_3}" title="">About Us</a></li>
+	<li><a href="{page_link_2}" title="">Contact Us</a></li>
+	<li><a href="{url_search}" title="Search Listings">Search Listings</a></li>
+	<li><a href="{url_blog}" title="View Blog">View Blog</a></li>
+</ul>
+<ul id="subnav">
+	<li id="subnavfirst"><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=1" title="Homes">Homes</a></li>
+	<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=3" title="Farms">Farms</a></li>
+	<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=4" title="Commercial">Commercial</a></li>
+	<li><a href="{baseurl}/index.php?action=search_step_2&amp;pclass[]=2" title="Land">Land</a></li>
+	{check_member}
+	<li><a href="{url_edit_profile}" title="Edit Profile">Edit Profile</a></li>
+	<li><a href="{url_view_favorites}" title="View Favorites">View Favorites</a></li>
+	<li><a href="{url_view_saved_searches}" title="Saved Searches">Saved Searches</a></li>
+	<li><a href="{url_logout}" title="Logout">Logout</a></li>
+	{/check_member}
+</ul>
+<!-- BANNER -->
+<div id="banner">
+	<div class="search">
+		<h4 class="heading">Latest News</h4>
+		<p>This is where you can put the latest Real Estate news, mortgage rates, calculator, Featured properties or a property search. The div has an auto overflow so if there is too much text or too many pictures a scroll will be created automaticly.</p>
+		<br />{featured_listings_vertical}
+	</div>
+</div>
+<!-- END EDIT -->
+<div class="button">
+	<a href="{url_view_agents}" title="View Agents"><img src="{template_url}/images/agent-ico.gif" height="30px" width="30px" title="View Agents" alt="View Agents" /></a>
+	<a href="{url_view_calculator}" onclick="window.open(this.href,'_blank','location=0,status=0,scrollbars=1,toolbar=0,menubar=0,width=500,height=520');return false" title="Loan Calculators"><img src="{template_url}/images/calc.gif" height="30px" width="20px" title="Calculator" alt="Calculator" /></a>
+</div>
+{content}
+<div style="float:left;"><strong>Choose Template</strong>{template_select}</div>
+<div class="right"><img src="{template_url}/images/feed-icon-14x14.png" alt="RSS" />&nbsp;<a href="index.php?action=rss_featured_listings">{lang_rss_featured_link_title}</a>&nbsp;&nbsp;<img src="{template_url}/images/feed-icon-14x14.png" alt="RSS" />&nbsp;<a href="index.php?action=rss_lastmodified_listings" >{lang_rss_lastmodified_link_title}</a></div>
+<div id="foot">
+	<p>
+		powered by <a href="http://open-realty.org">Open-Realty</a><br />
+		a product of <a href="http://www.transparent-tech.com">Transparent Technologies</a><br />
+		&copy;2003-2009 Transparent Technologies. All Rights Reserved<br />
+		Use of this website and information available from it is subject to our <a href="{page_link_4}">Legal Notice and Disclaimer</a>
+	</p>
+</div>
+{load_js_last}
+</body>
+</html>

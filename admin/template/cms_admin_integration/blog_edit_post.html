@@ -1,0 +1,43 @@
+<a href="{blog_manager_url}" class="blog_breadcrumb_link">{lang_admin_blog_manager}</a><br /><br />
+<form action="{blog_edit_action}" method="post" id="edit" name="edit">
+<input type="hidden" name="edit" value="yes" />
+<input type="hidden" name="blogID" value="{blog_id}" />
+<span class="label">{lang_blog_title}</span><br /><input type="text"  size="50" name="title" value="{blog_title}" class="blog_edit_input" /><br />
+<span class="label">{lang_template_tag_for_blog}</span> - {curley_open}blog_link_{blog_id}{curley_close} <br />
+<span class="label">{lang_link_to_blog}</span> - <a href="{baseurl}/{blog_article_url}">{baseurl}/{blog_article_url}</a><br />
+<br />
+
+<textarea name="ta" id="ta" class="edit_blog_post_editor">{blog_html}</textarea>
+<br />
+
+<div class="blog_edit_section">
+	<div class="blog_edit_section_title">{lang_blog_publication_status}</div>
+	<div class="blog_edit_section_options">
+	<select name="published" class="blog_edit_section_input">
+	<option value="{blog_published}">{blog_published_lang}</option>
+	<option value="{blog_published}">----------</option>
+	{blog_draft_block}<option value="0">{lang_blog_draft}</option>{/blog_draft_block}
+	{blog_published_block}<option value="1">{lang_blog_published}</option>{/blog_published_block}
+	{blog_review_block}<option value="2">{lang_blog_review}</option>{/blog_review_block}
+	</select>
+	</div>
+</div>
+
+<div class="blog_edit_section">
+	<div class="blog_edit_section_title">{lang_blog_seo}</div>
+	<div class="blog_edit_section_options">
+	<span class="label">{lang_blog_meta_description}:</span> <input type="text" size="50" name="description" class="blog_edit_section_input" value="{blog_description}" /><br /><br />
+	<span class="label">{lang_blog_meta_keywords}:</span> <input type="text" size="50" name="keywords" class="blog_edit_section_input" value="{blog_keywords}" /><br />
+	</div>
+</div>
+{blog_save_block}	
+<input type="submit" name="ok" value="{lang_submit}" style="margin-top:3px;" />
+{/blog_save_block}
+</form>
+{blog_delete_block}
+<form action="index.php?action=edit_blog" method="post" id="delete" style="margin-top:3px;">
+<input type="hidden" name="delete" value="yes" />
+<input type="hidden" name="blogID" value="{blog_id}" />
+<input type="submit" name="ok" value="{lang_delete_blog}" />
+</form>
+{/blog_delete_block}

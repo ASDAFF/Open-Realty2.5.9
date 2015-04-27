@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>{site_title}</title>
+{load_meta_description}
+{load_meta_keywords}
+<meta http-equiv="content-type" content="text/html;charset={charset}" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="robots" content="index,follow" />
+<meta name="Generator" content="Open-Realty" />
+<link rel="shortcut icon" href="{template_url}/images/favicon.ico" />
+<link href="{template_url}/style_main.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 6]><link href="{template_url}/style_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_lastmodified_link_title}" href="index.php?action=rss_lastmodified_listings" />
+<link rel="alternate" type="application/rss+xml" title="{company_name} - {lang_rss_featured_link_title}" href="index.php?action=rss_featured_listings" />
+{load_css_style_logo}
+<script type="text/javascript" src="{template_url}/js/target_links.js"></script>
+{load_js}
+{license_tag}
+</head>
+<body>
+<!-- bof STU NICHOLLS CSS LAYOUT (http://www.cssplay.co.uk/layouts/minimum.html) -->
+<div class="site_width"><div class="site_minwidth"><div class="site_layout"><div class="site_container"><div class="container">
+	<!-- bof MAIN TOTAL -->
+	<div id="main_total">
+		<!-- bof TOTAL AREA -->
+		<div id="total_area">
+			<!-- bof HEADER -->
+			<div id="header">
+				<div id="header_left">
+					<div id="header_left_content">
+						<!-- bof LOGO -->
+						<div id="logo">&nbsp;</div>
+						<!-- eof LOGO -->
+					</div>
+					<div id="header_right">
+						<div id="header_right_content">
+							<!-- bof MULTILINGUAL FLAGS -->
+							<a href="./" title="English is the default language of this Website"><img src="{template_url}/images/flags/us.png" alt="English is the default language of this Website" /></a>
+							<!-- eof MULTILINGUAL FLAGS -->
+							<!-- bof DATE -->
+							<span id="date">
+								<script type="text/javascript">
+								<!--
+								var days=new Array(7);
+								days[1]="{lang_monday}";
+								days[2]="{lang_tuesday}";
+								days[3]="{lang_wednesday}";
+								days[4]="{lang_thursday}";
+								days[5]="{lang_friday}";
+								days[6]="{lang_saturday}";
+								days[0]="{lang_sunday}";
+								var months=new Array(13);
+								months[1]="{lang_january}";
+								months[2]="{lang_february}";
+								months[3]="{lang_march}";
+								months[4]="{lang_april}";
+								months[5]="{lang_may}";
+								months[6]="{lang_june}";
+								months[7]="{lang_july}";
+								months[8]="{lang_august}";
+								months[9]="{lang_september}";
+								months[10]="{lang_october}";
+								months[11]="{lang_november}";
+								months[12]="{lang_december}";
+								var time=new Date();
+								var ldays=days[time.getDay()];
+								var lmonth=months[time.getMonth() + 1];
+								var date=time.getDate();
+								var year=time.getYear();
+								if (year < 2000)
+								year = year + 1900;
+								document.write(ldays + "," + " " + lmonth + " " + date + "," + " " + year);
+								// -->
+								</script>
+							</span>
+							<!-- eof DATE -->
+						</div>
+						<div class="clear"></div>
+						<!-- bof SLOGAN -->
+						<span id="slogan">THE LEADING OPEN SOURCE SOLUTION FOR MANAGING REAL ESTATE LISTINGS</span>
+						<!-- eof SLOGAN -->
+					</div>
+				</div>
+			</div>
+			<!-- eof HEADER -->
+			<!-- bof TOPBAR-->
+			<div id="topbar">
+				<div id="topbar_left">
+					<div id="topbar_right">
+						<!-- bof HORIZONTAL MENU -->
+						<div id="main_horiz_menu">
+							<ul>
+								<li><a href="{url_index}">HOME</a></li>
+								<li><a href="{page_link_3}">ABOUT US</a></li>
+								<li><a href="{page_link_2}">CONTACT US</a></li>
+							</ul>
+						</div>
+						<!-- eof HORIZONTAL MENU -->
+					</div>
+				</div>
+			</div>
+			<!-- eof TOPBAR-->
+			<!-- bof MAIN CONTENT -->
+			<div id="main_content">
+				<!-- bof TOP BORDERS SETTINGS -->
+				<div id="main_content_top"><div id="main_content_top_left"><div id="main_content_top_right"></div></div></div>
+				<!-- eof TOP BORDERS SETTINGS -->
+				<!-- bof WEBSITE CONTENT -->
+				<div id="website_content">
+					<!-- bof CONTENT AREA -->
+					<div id="content_area">
+						<!-- bof LEFT CONTENT -->
+						<div id="content_left">
+							<!-- bof BOXES ON LEFT CONTENT-->
+							<div class="box menu_vertical">
+								<!-- bof BOX BORDERS SETTINGS -->
+								<div class="box_top"><div class="box_top_left"><div class="box_top_right"></div></div></div>
+								<!-- eof BOX BORDERS SETTINGS -->
+								<!-- bof BOX CONTENT -->
+								<div class="box_content">
+									<h6>MENU</h6>
+									<ul class="menu">
+										<li><a href="{url_search_results}" title="View All Listings">View All Listings</a></li>
+										<li><a href="{url_search}" title="Search Listings">Search Listings</a></li>
+										<li><a href="{url_view_agents}" title="">View Agents</a></li>
+										<li><a href="{url_view_calculator}" onclick="window.open(this.href,'_blank','location=0,status=0,scrollbars=1,toolbar=0,menubar=0,width=500,height=520');return false" title="Loan Calculators">Loan Calculators</a></li>
+<!-- bof HIDE IF MEMBER, AGENT OR ADMIN IS LOGGED -->
+{check_guest}
+										<li><a href="{url_member_signup}" title="Member Signup">Member Signup</a></li>
+										<li><a href="{url_agent_signup}" title="Agent Signup">Agent Signup</a></li>
+										<li><a href="{url_member_login}" title="Login">Login</a></li>
+{/check_guest}
+<!-- eof HIDE IF MEMBER, AGENT OR ADMIN IS LOGGED -->
+									</ul>
+								</div>
+								<!-- eof BOX CONTENT -->
+								<!-- bof BOX BORDERS SETTINGS -->
+								<div class="box_bottom"><div class="box_bottom_left"><div class="box_bottom_right"></div></div></div>
+								<!-- eof BOX BORDERS SETTINGS -->
+							</div>
+<!-- bof SHOW ONLY IF MEMBER, AGENT AND ADMIN IS LOGGED -->
+{check_member}
+							<div class="box menu_vertical">
+								<!-- bof BOX BORDERS SETTINGS -->
+								<div class="box_top"><div class="box_top_left"><div class="box_top_right"></div></div></div>
+								<!-- eof BOX BORDERS SETTINGS -->
+								<!-- bof BOX CONTENT -->
+								<div class="box_content">
+									<h6>USER MENU</h6>
+									<ul class="menu">
+	<!-- bof HIDE IF ADMIN IS LOGGED -->
+	{!check_admin}
+		<!-- bof HIDE IF AGENT IS LOGGED -->
+		{!check_agent}
+										<li><a href="{url_view_favorites}" title="View Favorites">View Favorites</a></li>
+										<li><a href="{url_view_saved_searches}" title="Saved Searches">Saved Searches</a></li>
+		{/!check_agent}
+		<!-- eof HIDE IF AGENT IS LOGGED -->
+		<!-- bof SHOW ONLY IF AGENT IS LOGGED -->
+		{check_agent}
+										<li><a href="{baseurl}/admin/index.php?action=add_listing_property_class" title="Add Listing">Add Listing</a></li>
+										<li><a href="{baseurl}/admin/index.php?action=edit_my_listings" title="Edit Listings">Edit Listings</a></li>
+		{/check_agent}
+		<!-- eof SHOW ONLY IF AGENT IS LOGGED -->
+										<li><a href="{url_edit_profile}" title="Edit my Account">Edit my Account</a></li>
+	{/!check_admin}
+	<!-- eof HIDE IF ADMIN IS LOGGED -->
+	<!-- bof SHOW ONLY IF ADMIN IS LOGGED -->
+	{check_admin}
+										<li><a href="{baseurl}/admin/" title="Admin Area">Admin Area</a></li>
+	{/check_admin}
+	<!-- eof SHOW ONLY IF ADMIN IS LOGGED -->
+										<li><a href="{url_logout}" title="Logout">Logout</a></li>
+									</ul>
+								</div>
+								<!-- eof BOX CONTENT -->
+								<!-- bof BOX BORDERS SETTINGS -->
+								<div class="box_bottom"><div class="box_bottom_left"><div class="box_bottom_right"></div></div></div>
+								<!-- eof BOX BORDERS SETTINGS -->
+							</div>
+{/check_member}
+<!-- eof SHOW ONLY IF MEMBER, AGENT AND ADMIN IS LOGGED -->
+							<div class="box syndication">
+								<!-- bof BOX BORDERS SETTINGS -->
+								<div class="box_top"><div class="box_top_left"><div class="box_top_right"></div></div></div>
+								<!-- eof BOX BORDERS SETTINGS -->
+								<!-- bof BOX CONTENT -->
+								<div class="box_content">
+									<h6>SYNDICATION</h6>
+									<ul class="menu">
+										<li><a href="index.php?action=rss_featured_listings" title="Featured Listings">Featured Listings</a></li>
+										<li><a href="index.php?action=rss_lastmodified_listings" title="Last Modified Listings">Last Modified Listings</a></li>
+									</ul>
+								</div>
+								<!-- eof BOX CONTENT -->
+								<!-- bof BOX BORDERS SETTINGS -->
+								<div class="box_bottom"><div class="box_bottom_left"><div class="box_bottom_right"></div></div></div>
+								<!-- eof BOX BORDERS SETTINGS -->
+							</div>
+							<div class="box">
+								<!-- bof BOX BORDERS SETTINGS -->
+								<div class="box_top"><div class="box_top_left"><div class="box_top_right"></div></div></div>
+								<!-- eof BOX BORDERS SETTINGS -->
+								<!-- bof BOX CONTENT -->
+								<div class="box_content about_this_template">
+									<h6><a href="{page_link_100}" title="LAZULI TEMPLATE">About "LAZULI" Template</a></h6>
+									<p><a href="http://open-realty.org/" title="Open-Realty&reg; Documentation" rel="external"><img src="{template_url}/images/about/icon_openrealty.png" width="80" height="28" alt="Made for Open-Realty&reg; v.2.x" /></a><a href="http://wiki.open-realty.org/" title="Open-Realty&reg; Documentation" rel="external"><img src="{template_url}/images/about/icon_ordocs.png" width="80" height="28" alt="Open-Realty&reg; Documentation" /></a></p>
+									<p><a href="{template_url}/images/about/preview_iexplorer6.jpg" onclick="window.open(this.href,'_blank','location=0,status=0,scrollbars=0,toolbar=0,menubar=0,width=660,height=500');return false" title="Tested with Internet Explorer v.6"><img src="{template_url}/images/about/icon_iexplorer6.png" width="80" height="28" alt="Tested with Internet Explorer v.6" /></a><a href="{template_url}/images/about/preview_iexplorer7.jpg" onclick="window.open(this.href,'_blank','location=0,status=0,scrollbars=0,toolbar=0,menubar=0,width=660,height=500');return false" title="Tested with Internet Explorer v.7"><img src="{template_url}/images/about/icon_iexplorer7.png" width="80" height="28" alt="Tested with Internet Explorer v.7" /></a></p>
+									<p><a href="{template_url}/images/about/preview_firefox.jpg" onclick="window.open(this.href,'_blank','location=0,status=0,scrollbars=0,toolbar=0,menubar=0,width=660,height=500');return false" title="Tested with Firefox v.2.0.0.5"><img src="{template_url}/images/about/icon_firefox.png" width="80" height="28" alt="Tested with Firefox v.2.0.0.5" /></a><a href="{template_url}/images/about/preview_safari.jpg" onclick="window.open(this.href,'_blank','location=0,status=0,scrollbars=0,toolbar=0,menubar=0,width=660,height=500');return false" title="Tested with Safari v.3.0.2"><img src="{template_url}/images/about/icon_safari.png" width="80" height="28" alt="Tested with Safari v.3.0.2" /></a></p>
+									<p><a href="http://validator.w3.org/check?uri={baseurl}" title="XHTML 1.0 STRICT" rel="external"><img src="{template_url}/images/about/icon_w3c_xhtml.png" width="80" height="28" alt="XHTML 1.0 STRICT" /></a><a href="http://jigsaw.w3.org/css-validator/validator?uri={baseurl}" title="Valid CSS" rel="external"><img src="{template_url}/images/about/icon_w3c_css.png" width="80" height="28" alt="Valid CSS" /></a></p>
+								</div>
+								<!-- eof BOX CONTENT -->
+								<!-- bof BOX BORDERS SETTINGS -->
+								<div class="box_bottom"><div class="box_bottom_left"><div class="box_bottom_right"></div></div></div>
+								<!-- eof BOX BORDERS SETTINGS -->
+							</div>
+							<p id="ttech_logo"><a href="http://www.transparent-tech.com" title="Open-Realty&reg; a product of Transparent Technologies" rel="external"><img src="{template_url}/images/about/icon_ttech.png" width="180" height="60" alt="Open-Realty&reg; a product of Transparent Technologies" /></a></p>
+							<p style="padding-top:10px;"><strong>Choose Template:</strong></p>
+							{template_select}
+							<!-- eof BOXES ON LEFT CONTENT -->
+						</div>
+						<!-- eof LEFT CONTENT -->
+						<!-- bof RIGHT CONTENT -->
+						<div id="content_right">
+							<!-- bof OPEN-REALTY CONTENT TAG -->
+							<div id="or_content_tag">
+								<div class="delete_this">
+								<h4>(Lapis) "LAZULI" TEMPLATE</h4>
+								<hr />
+								<ul>
+									<li>This template is named "LAZULI", because the predominant blue color and the name of a semi-precious stone called "<a href="http://en.wikipedia.org/wiki/Lapis_lazuli" title="WIKIPEDIA" rel="external">LAPIS LAZULI</a>";</li>
+									<li>This template is W3C compliant, valid XHTML 1.0 STRICT and valid CSS 2;</li>
+									<li>The users are able to choose from a FIXED (900px) site width or a VARIABLE (90%) site width. By default, it is set to VARIABLE site width - this way, no matter wich is your screen resolution the site will fit at your screen (at the top of the "style_main.css" stylesheet file you can modify this setting);</li>
+									<li>This template were written having in mind the possibility to be easily customized - so almost all template files have its own stylesheet. Editing just 6 image files plus a logo file, you can change everything with new settings at the stylesheets;</li>
+									<li>This template is "Multilingual Ready", just because we reserved a top right row to place flags. Inside the "images" directory you will find 247 flags;</li>
+									<li>This template opens with "Search Listings" link, a page with a small AJAX code: "SprySlidingPanels" from Spry Prerelease 1.6.1 Framework;</li>
+									<li>Have fun! :)</li>
+								</ul>
+								</div>
+							</div>
+							<!-- eof OPEN-REALTY CONTENT TAG -->
+						</div>
+						<!-- eof RIGHT CONTENT -->
+						<div class="clear"></div>
+					</div>
+					<!-- eof CONTENT AREA -->
+					<div class="clear"></div>
+				</div>
+				<!-- eof WEBSITE CONTENT -->
+				<!-- bof BOTTOM BORDERS SETTINGS -->
+				<div id="main_content_bottom"><div id="main_content_bottom_left"><div id="main_content_bottom_right"></div></div></div>
+				<!-- eof BOTTOM BORDERS SETTINGS -->
+			</div>
+			<!-- eof MAIN CONTENT -->
+		</div>
+		<!-- eof TOTAL AREA -->
+		<!-- bof FOOTER -->
+		<div id="footer">
+			<div id="footer_left">
+				<div id="footer_right">
+					<div>
+						<p>Powered by <a href="http://open-realty.org" title="Open-Realty&reg;" rel="external">Open-Realty</a><span class="reg_mark_h2">&#174;</span> a product of <a href="http://www.transparent-tech.com" title="Transparent Technologies, Inc." rel="external">Transparent Technologies, Inc.</a> - &copy;2003-2008 - All Rights Reserved.</p>
+						<p>Use of this software is free under the terms of the Transparent Technologies <a href="http://open-realty.org/license_info.html" title="Transparent Technologies, Inc." rel="external">License</a></p>
+						<p>Use of this website and information available therein is subject to the <a href="{page_link_4}" title="Legal Notice and Disclaimer">Legal Notice and Disclaimer</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- eof FOOTER -->
+	</div>
+	<!-- eof MAIN TOTAL -->
+</div></div></div></div></div>
+<!-- eof STU NICHOLLS CSS LAYOUT (http://www.cssplay.co.uk/layouts/minimum.html) -->
+{load_js_last}
+</body>
+</html>
